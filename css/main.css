@@ -378,10 +378,6 @@ button {
   opacity: 0;
 }
 
-.bar-graph-horizontal {
-  max-width: 380px;
-}
-
 .bar-graph-horizontal > div {
   float: left;
   margin-bottom: 8px;
