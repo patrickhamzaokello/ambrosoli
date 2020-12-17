@@ -23,3 +23,15 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.background = "#2e3191";
+  } else {
+    document.getElementById("header").style.background = "#000";
+  }
+}

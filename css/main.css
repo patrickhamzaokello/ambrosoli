@@ -4,6 +4,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -32,6 +36,18 @@ img {
   color: white;
 }
 
+#header {
+  position: fixed;
+  /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%;
+  /* Full width */
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  /* Add a transition effect (when scrolling - and font size is decreased) */
+  z-index: 5;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,6 +64,7 @@ header {
 header .logo {
   color: aqua;
   font-weight: bold;
+  width: 8em;
 }
 
 header nav a {
@@ -479,4 +496,9 @@ button {
     opacity: 1;
   }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 /*# sourceMappingURL=main.css.map */

@@ -7,9 +7,11 @@
     <title>Ambrosoli</title>
   </head>
   <body>
-    <div class="nav-container">
+    <div id="header"class="nav-container">
       <header>
-        <a href="#" class="logo">Ambrosoli</a>
+        <a href="#" class="logo">
+          <img src="images/AW b.png" alt="">
+        </a>
 
         <div id="menu-bar">
             <div id="navmenu" onclick="menuhandler()">
@@ -36,8 +38,8 @@
 
     <div class="hero">
       <div class="imagecontent">
-          <div class="explore">
-            <h1>Explore</h1>
+          <div class="explore anime">
+            <h1 class="anime">Explore</h1>
           </div>
       </div>
      
@@ -215,6 +217,23 @@
 </section>
 
     <script src="scripts/mainscript.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script>
+      // gsap.from('.explore',{opacity:0, duration: 1, y: -50, ease:'Power2.easeInOut'})
+      //gsap.from('.anime',{opacity:0, duration: 1, y: -50, stagger:0.6})
+
+      //gsap.from('.sectionheading', {duration: 1, y:30, opacity: 0, delay: 1.4})
+
+      // let tl = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger:'.featuredworks',
+      //   }
+      // });
+
+      // tl.from("img", {x:200, opacity: 0, duration:1.5})
+      
+    </script>
 
   </body>
 </html>
