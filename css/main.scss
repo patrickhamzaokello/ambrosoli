@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -153,6 +155,7 @@ header {
   text-transform: uppercase;
   display: grid;
   place-content: center;
+  margin: 4em 0;
 
   h1 {
     font-size: 2em;
@@ -318,6 +321,7 @@ button {
   background: #2e3191;
   outline: none;
   border: none;
+  font-family: "Poppins";
   color: white;
 }
 
@@ -353,7 +357,7 @@ button {
 }
 
 .bar-graph-horizontal {
-  // max-width: 380px;
+  display: inline-block;
 }
 
 .bar-graph-horizontal > div {
@@ -460,6 +464,201 @@ button {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover {
+  flex: 1 1 50%;
+}
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
+.teamcard {
+  padding: 2em 0;
+}
+
+.socialcontact {
+  display: flex;
+  padding: 1em 0;
+
+  justify-items: center;
+  img {
+    width: 28px;
+    margin-right: 1em;
+  }
+}
+
+.card {
+  position: relative;
+
+  // width: 700px;
+  height: 400px;
+  overflow: hidden;
+
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Light blue cover above the slide show*/
+.card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 900;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(140, 22, 115, 0.2);
+}
+
+.card_part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  transform: translateX(700px);
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/1.jpg?raw=true);
+
+  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+}
+
+.card_part.card_part-two {
+  z-index: 6;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/2.jpg?raw=true);
+  animation-delay: 7s;
+}
+
+.card_part.card_part-three {
+  z-index: 5;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/3.jpg?raw=true);
+  animation-delay: 14s;
+}
+
+.card_part.card_part-four {
+  z-index: 4;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
+  animation-delay: 21s;
+}
+
+@keyframes opaqTransition {
+  3% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  28% {
+    transform: translateX(-700px);
+  }
+  100% {
+    transform: translateX(-700px);
+  }
+}
+
+.address {
+  text-align: center;
+  padding: 4em;
+}
+
+form {
+  .contactform {
+    margin-bottom: 2em;
+    label {
+      display: block;
+      color: #636363;
+      font-weight: bold;
+      font-family: "Poppins";
+    }
+
+    input,
+    textarea {
+      padding: 20px;
+      margin: 0.5em 0;
+      outline: none;
+      border: none;
+      background: #f2f2f2;
+      color: #636363;
+      width: 100%;
+      font-family: "Poppins";
+    }
+  }
+
+  .submitbutton {
+    background: #1b75bb;
+  }
+}
+
+footer {
+  font-family: "Poppins";
+
+  .footercontainer {
+    background: #2e3191;
+    border-top: 10px solid #25a9e0;
+    font-family: "Poppins";
+
+    .footerdetails {
+      padding: 2em;
+      text-align: center;
+      color: #25a9e0;
+    }
+
+    .footersocials {
+      display: flex;
+      padding: 4em 2em;
+      justify-content: space-between;
+
+      img {
+        width: 50px;
+        background: #25a9e0;
+        padding: 1em;
+      }
+
+      img:hover {
+        background: blue;
+      }
+    }
   }
 }
 
