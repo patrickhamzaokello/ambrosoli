@@ -142,6 +142,10 @@ header nav a:hover {
   opacity: 0;
 }
 
+.hero {
+  margin-top: 100px;
+}
+
 .hero .imagecontent {
   background: url("../images/heroimage.JPG");
   background-repeat: no-repeat;
@@ -740,6 +744,35 @@ footer .footercontainer .footersocials img {
 
 footer .footercontainer .footersocials img:hover {
   background: blue;
+}
+
+@media only screen and (min-width: 800px) {
+  #menu-bar {
+    display: none;
+  }
+  #menu-bar #navmenu {
+    display: none;
+  }
+  header .logo {
+    width: 16em;
+  }
+  header #nav {
+    display: unset;
+  }
+  header nav {
+    float: right;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav ul a {
+    display: block;
+    padding: 0 1em;
+    font-size: unset;
+    font-weight: bold;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

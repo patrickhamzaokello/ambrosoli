@@ -128,6 +128,7 @@ header {
 }
 
 .hero {
+  margin-top: 100px;
   .imagecontent {
     background: url("../images/heroimage.JPG");
     background-repeat: no-repeat;
@@ -657,6 +658,36 @@ footer {
 
       img:hover {
         background: blue;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #menu-bar {
+    display: none;
+    #navmenu {
+      display: none;
+    }
+  }
+
+  header {
+    .logo {
+      width: 16em;
+    }
+    #nav {
+      display: unset;
+    }
+    nav {
+      float: right;
+      ul {
+        display: flex;
+        a {
+          display: block;
+          padding: 0 1em;
+          font-size: unset;
+          font-weight: bold;
+        }
       }
     }
   }
