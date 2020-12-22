@@ -47,7 +47,7 @@ img {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   /* Add a transition effect (when scrolling - and font size is decreased) */
-  z-index: 5;
+  z-index: 12;
 }
 
 header {
@@ -144,26 +144,33 @@ header nav a:hover {
 
 .hero {
   margin-top: 100px;
+  height: 90vh;
 }
 
 .hero .imagecontent {
   background: url("../images/heroimage.JPG");
   background-repeat: no-repeat;
   background-position: center;
-  height: 400px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero .explore {
-  border: 5px solid #bfbfff;
-  border-radius: 50%;
-  padding: 3.5em;
+  background: #2e3191;
+  position: absolute;
+  padding: 0 3em;
   text-align: center;
   color: #ffffff;
+  bottom: 0;
+  margin-bottom: 2em;
 }
 
 .featured {
@@ -488,8 +495,25 @@ button {
     width: 95.5%;
   }
 }
+@keyframes show-bar-one {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95.5%;
+  }
+}
 
 @-webkit-keyframes show-bar-two {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 71%;
+  }
+}
+
+@keyframes show-bar-two {
   0% {
     width: 0;
   }
@@ -507,6 +531,15 @@ button {
   }
 }
 
+@keyframes show-bar-three {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 74.7%;
+  }
+}
+
 @-webkit-keyframes show-bar-four {
   0% {
     width: 0;
@@ -516,7 +549,25 @@ button {
   }
 }
 
+@keyframes show-bar-four {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 76.8%;
+  }
+}
+
 @-webkit-keyframes fade-in-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-text {
   0% {
     opacity: 0;
   }
@@ -595,11 +646,12 @@ button {
 
 .socialcontact img {
   width: 30px;
+  height: 30px;
   margin-right: 1em;
 }
 
 .teamcontactdinfo {
-  border: 1px solid #333333;
+  border: 1px solid #9e9dcc;
   margin-top: 0.5em;
   text-align: center;
 }
@@ -609,7 +661,7 @@ button {
 }
 
 .teamcontactdinfo .teamdes {
-  border-top: 1px solid #333333;
+  border-top: 1px solid #9e9dcc;
 }
 
 .card {
@@ -617,8 +669,6 @@ button {
   height: 400px;
   overflow: hidden;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /*Light blue cover above the slide show*/
@@ -631,7 +681,7 @@ button {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(140, 22, 115, 0.2);
+  background-color: rgba(22, 59, 140, 0.2);
 }
 
 .card_part {
@@ -650,6 +700,7 @@ button {
   -webkit-transform: translateX(700px);
           transform: translateX(700px);
   background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/1.jpg?raw=true);
+  background-repeat: no-repeat;
   -webkit-animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
           animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
 }
@@ -657,6 +708,7 @@ button {
 .card_part.card_part-two {
   z-index: 6;
   background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/2.jpg?raw=true);
+  background-repeat: no-repeat;
   -webkit-animation-delay: 7s;
           animation-delay: 7s;
 }
@@ -664,6 +716,7 @@ button {
 .card_part.card_part-three {
   z-index: 5;
   background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/3.jpg?raw=true);
+  background-repeat: no-repeat;
   -webkit-animation-delay: 14s;
           animation-delay: 14s;
 }
@@ -671,6 +724,7 @@ button {
 .card_part.card_part-four {
   z-index: 4;
   background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
+  background-repeat: no-repeat;
   -webkit-animation-delay: 21s;
           animation-delay: 21s;
 }
@@ -789,7 +843,7 @@ footer .footercontainer .footersocials img:hover {
     display: none;
   }
   header .logo {
-    width: 16em;
+    width: 10em;
   }
   header #nav {
     display: unset;
@@ -888,8 +942,8 @@ footer .footercontainer .footersocials img:hover {
   .teamcollectiondiv {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
     grid-gap: 2em;
   }
   .contactdetails {
@@ -905,6 +959,64 @@ footer .footercontainer .footersocials img:hover {
   }
   .contactdetails .address p {
     font-size: 20px;
+  }
+  #wrapper {
+    width: 100%;
+    max-width: 964px;
+    position: relative;
+  }
+  #carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  #carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  #prev,
+  #next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  #prev {
+    top: 25%;
+    left: 0;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    display: none;
+    width: 40px;
+  }
+  #next {
+    top: 25%;
+    right: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 40px;
+  }
+  #content {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2em;
+    grid-auto-flow: column;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .item {
+    width: 180px;
   }
 }
 
