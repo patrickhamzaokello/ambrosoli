@@ -297,6 +297,22 @@ img {
   background-color: #717171;
 }
 
+.addresslayout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addresslayout img {
+  margin-right: 2em;
+  width: 30px;
+  height: 30px;
+}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -568,13 +584,32 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1em 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 4em;
+  border: 1px solid #535353;
+  background: #333333;
   justify-items: center;
 }
 
 .socialcontact img {
-  width: 28px;
+  width: 30px;
   margin-right: 1em;
+}
+
+.teamcontactdinfo {
+  border: 1px solid #333333;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.teamcontactdinfo .title {
+  text-transform: uppercase;
+}
+
+.teamcontactdinfo .teamdes {
+  border-top: 1px solid #333333;
 }
 
 .card {
@@ -772,6 +807,104 @@ footer .footercontainer .footersocials img:hover {
     padding: 0 1em;
     font-size: unset;
     font-weight: bold;
+  }
+  .aboutus-container ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+  .aboutus-container ul li {
+    margin-right: 2em;
+  }
+  .aboutus-container ul li p {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .parent {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+  }
+  .parent .div1 {
+    grid-area: unset;
+  }
+  .parent .div2 {
+    grid-area: unset;
+  }
+  .parent .div3 {
+    grid-area: unset;
+  }
+  .parent .div4 {
+    grid-area: unset;
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  .agencydetails {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+    grid-gap: 2em;
+  }
+  .agencydetails .agencycontent p {
+    font-size: 21px;
+  }
+  .workcollection {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+    grid-gap: 2em;
+  }
+  .workcollection .workcard {
+    text-align: center;
+  }
+  .skillsrating {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% auto;
+        grid-template-columns: 60% auto;
+    grid-gap: 2em;
+  }
+  .skillsrating .producdescription img {
+    height: 450px;
+  }
+  .gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+    grid-gap: 2em;
+  }
+  .gallery .galleryartwork {
+    text-align: center;
+  }
+  .teamcollectiondiv {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 2em;
+  }
+  .contactdetails {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+    grid-gap: 2em;
+    padding-top: 4em;
+  }
+  .contactdetails .address {
+    text-align: unset;
+  }
+  .contactdetails .address p {
+    font-size: 20px;
   }
 }
 

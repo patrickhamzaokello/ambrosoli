@@ -270,6 +270,18 @@ img {
   background-color: #717171;
 }
 
+.addresslayout {
+  display: flex;
+  margin-top: 1em;
+  align-items: center;
+
+  img {
+    margin-right: 2em;
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -513,12 +525,29 @@ button {
 
 .socialcontact {
   display: flex;
-  padding: 1em 0;
+  justify-content: space-between;
+  padding: 1em 4em;
+  border: 1px solid rgb(83, 83, 83);
+  background: #333333;
 
   justify-items: center;
   img {
-    width: 28px;
+    width: 30px;
     margin-right: 1em;
+  }
+}
+
+.teamcontactdinfo {
+  border: 1px solid #333333;
+  margin-top: 0.5em;
+  text-align: center;
+
+  .title {
+    text-transform: uppercase;
+  }
+
+  .teamdes {
+    border-top: 1px solid #333333;
   }
 }
 
@@ -688,6 +717,109 @@ footer {
           font-size: unset;
           font-weight: bold;
         }
+      }
+    }
+  }
+
+  .aboutus-container {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 1em;
+      li {
+        margin-right: 2em;
+
+        p {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+
+    .div1 {
+      grid-area: unset;
+    }
+    .div2 {
+      grid-area: unset;
+    }
+    .div3 {
+      grid-area: unset;
+    }
+    .div4 {
+      grid-area: unset;
+    }
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+
+  .agencydetails {
+    display: grid;
+    grid-template-columns: (40% auto);
+    grid-gap: 2em;
+
+    .agencycontent {
+      p {
+        font-size: 21px;
+      }
+    }
+  }
+
+  .workcollection {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 2em;
+
+    .workcard {
+      text-align: center;
+    }
+  }
+
+  .skillsrating {
+    display: grid;
+    grid-template-columns: (60% auto);
+    grid-gap: 2em;
+
+    .producdescription {
+      img {
+        height: 450px;
+      }
+    }
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 2em;
+
+    .galleryartwork {
+      text-align: center;
+    }
+  }
+
+  .teamcollectiondiv {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 2em;
+  }
+
+  .contactdetails {
+    display: grid;
+    grid-template-columns: (40% auto);
+    grid-gap: 2em;
+    padding-top: 4em;
+
+    .address {
+      text-align: unset;
+
+      p {
+        font-size: 20px;
       }
     }
   }
