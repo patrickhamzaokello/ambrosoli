@@ -137,19 +137,31 @@ header {
   opacity: 0;
 }
 
-.hero {
+.carousel {
   margin-top: 100px;
-  height: 90vh;
-  .imagecontent {
-    background: url("../images/heroimage.JPG");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
+  overflow: hidden;
+  max-width: 2000px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  .carousel__item,
+  .carousel__item--hidden {
+    display: none;
   }
+
+  .carousel__item img {
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
+  }
+
+  .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+  }
+
   .explore {
     background: #2e3191;
     position: absolute;
@@ -158,6 +170,42 @@ header {
     color: #ffffff;
     bottom: 0;
     margin-bottom: 2em;
+  }
+
+  .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    button {
+      border-radius: 50px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+    }
+
+    #carousel__button--prev {
+      margin-left: 20px;
+    }
+
+    #carousel__button--next {
+      margin-right: 20px;
+    }
+  }
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
   }
 }
 
@@ -343,8 +391,6 @@ img {
 }
 
 button {
-  width: 100%;
-  padding: 1.2em 0;
   background: #2e3191;
   outline: none;
   border: none;
