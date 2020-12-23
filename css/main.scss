@@ -59,7 +59,7 @@ img {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  padding: 1.5em;
   align-items: center;
 
   .logo {
@@ -138,7 +138,7 @@ header {
 }
 
 .carousel {
-  margin-top: 100px;
+  margin-top: 85px;
   overflow: hidden;
   max-width: 2000px;
   position: relative;
@@ -165,11 +165,16 @@ header {
   .explore {
     background: #2e3191;
     position: absolute;
-    padding: 0 3em;
+    padding: 0 1em;
     text-align: center;
     color: #ffffff;
     bottom: 0;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+
+    h1 {
+      font-size: 20px;
+      font-weight: 200;
+    }
   }
 
   .carousel__actions {
@@ -769,6 +774,7 @@ footer {
   }
 
   header {
+    padding: 1.5em;
     .logo {
       width: 10em;
     }
@@ -782,7 +788,7 @@ footer {
         a {
           display: block;
           padding: 0 1em;
-          font-size: unset;
+          font-size: 11px;
           font-weight: bold;
         }
       }
@@ -821,6 +827,19 @@ footer {
     }
     .div4 {
       grid-area: unset;
+    }
+  }
+
+  .carousel {
+    .explore {
+      background: #2e3191;
+      position: absolute;
+      padding: 0 3em;
+      text-align: center;
+      color: #ffffff;
+      bottom: 0;
+      font-size: 15px;
+      margin-bottom: 1em;
     }
   }
   section {

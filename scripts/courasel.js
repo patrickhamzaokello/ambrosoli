@@ -41,6 +41,8 @@ function moveToPrevSlide() {
   updateSlidePosition();
 }
 
+setInterval(moveToNextSlide, 5000);
+
 const gap = 16;
 
 const carousel = document.getElementById("carousel"),

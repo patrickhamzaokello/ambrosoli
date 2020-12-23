@@ -57,7 +57,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2em;
+  padding: 1.5em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -143,7 +143,7 @@ header nav a:hover {
 }
 
 .carousel {
-  margin-top: 100px;
+  margin-top: 85px;
   overflow: hidden;
   max-width: 2000px;
   position: relative;
@@ -175,11 +175,16 @@ header nav a:hover {
 .carousel .explore {
   background: #2e3191;
   position: absolute;
-  padding: 0 3em;
+  padding: 0 1em;
   text-align: center;
   color: #ffffff;
   bottom: 0;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+.carousel .explore h1 {
+  font-size: 20px;
+  font-weight: 200;
 }
 
 .carousel .carousel__actions {
@@ -902,6 +907,9 @@ footer .footercontainer .footersocials img:hover {
   #menu-bar #navmenu {
     display: none;
   }
+  header {
+    padding: 1.5em;
+  }
   header .logo {
     width: 10em;
   }
@@ -919,7 +927,7 @@ footer .footercontainer .footersocials img:hover {
   header nav ul a {
     display: block;
     padding: 0 1em;
-    font-size: unset;
+    font-size: 11px;
     font-weight: bold;
   }
   .aboutus-container ul {
@@ -955,6 +963,16 @@ footer .footercontainer .footersocials img:hover {
   }
   .parent .div4 {
     grid-area: unset;
+  }
+  .carousel .explore {
+    background: #2e3191;
+    position: absolute;
+    padding: 0 3em;
+    text-align: center;
+    color: #ffffff;
+    bottom: 0;
+    font-size: 15px;
+    margin-bottom: 1em;
   }
   section {
     padding: 10em 10em 4em 10em;
