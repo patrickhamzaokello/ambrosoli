@@ -502,7 +502,7 @@ button {
   background: #2e3191;
   outline: none;
   border: none;
-  font-family: "Poppins";
+  font-family: "Raleway", sans-serif;
   color: white;
 }
 
@@ -907,7 +907,7 @@ form .contactform label {
   display: block;
   color: #636363;
   font-weight: bold;
-  font-family: "Poppins";
+  font-family: "Raleway", sans-serif;
 }
 
 form .contactform input,
@@ -919,7 +919,7 @@ form .contactform textarea {
   background: #f2f2f2;
   color: #636363;
   width: 100%;
-  font-family: "Poppins";
+  font-family: "Raleway", sans-serif;
 }
 
 form .submitbutton {
@@ -927,13 +927,13 @@ form .submitbutton {
 }
 
 footer {
-  font-family: "Poppins";
+  font-family: "Raleway", sans-serif;
 }
 
 footer .footercontainer {
   background: #2e3191;
   border-top: 10px solid #25a9e0;
-  font-family: "Poppins";
+  font-family: "Raleway", sans-serif;
 }
 
 footer .footercontainer .footerdetails {
