@@ -1192,18 +1192,17 @@ footer .footercontainer .footerdetails {
 }
 
 footer .footercontainer .footersocials {
+  padding: 4em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 4em 2em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  place-content: center;
 }
 
 footer .footercontainer .footersocials img {
   width: 50px;
   background: #25a9e0;
+  margin-right: 2em;
   padding: 1em;
 }
 

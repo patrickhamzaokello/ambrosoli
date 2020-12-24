@@ -1055,13 +1055,15 @@ footer {
     }
 
     .footersocials {
-      display: flex;
       padding: 4em 2em;
-      justify-content: space-between;
+
+      display: flex;
+      place-content: center;
 
       img {
         width: 50px;
         background: #25a9e0;
+        margin-right: 2em;
         padding: 1em;
       }
 
