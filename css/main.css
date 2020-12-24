@@ -1115,68 +1115,6 @@ footer .footercontainer .footersocials img:hover {
   .contactdetails .address p {
     font-size: 20px;
   }
-  #wrapper {
-    width: 100%;
-    position: relative;
-  }
-  #carousel {
-    overflow: auto;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-  }
-  #carousel::-webkit-scrollbar {
-    height: 0;
-  }
-  #prev,
-  #next {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    background: #00e2ff;
-    color: #f2f2f2;
-    border: none;
-    padding: 8px;
-    border-radius: 50%;
-    outline: 0;
-    cursor: pointer;
-    position: absolute;
-  }
-  #prev svg,
-  #next svg {
-    color: white !important;
-  }
-  #prev {
-    top: 50%;
-    left: 0;
-    -webkit-transform: translate(50%, -50%);
-            transform: translate(50%, -50%);
-    display: none;
-    width: 40px;
-  }
-  #next {
-    top: 50%;
-    right: 0;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 40px;
-  }
-  #content {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 2em;
-    grid-auto-flow: column;
-    margin: auto;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .item {
-    width: 250px;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

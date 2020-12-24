@@ -987,67 +987,6 @@ footer {
       }
     }
   }
-
-  #wrapper {
-    width: 100%;
-    position: relative;
-  }
-
-  #carousel {
-    overflow: auto;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-  }
-
-  #carousel::-webkit-scrollbar {
-    height: 0;
-  }
-
-  #prev,
-  #next {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background: #00e2ff;
-    color: #f2f2f2;
-    border: none;
-    padding: 8px;
-    border-radius: 50%;
-    outline: 0;
-    cursor: pointer;
-    position: absolute;
-
-    svg {
-      color: white !important;
-    }
-  }
-
-  #prev {
-    top: 50%;
-    left: 0;
-    transform: translate(50%, -50%);
-    display: none;
-    width: 40px;
-  }
-
-  #next {
-    top: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
-    width: 40px;
-  }
-
-  #content {
-    display: grid;
-    grid-gap: 2em;
-    grid-auto-flow: column;
-    margin: auto;
-    box-sizing: border-box;
-  }
-
-  .item {
-    width: 250px;
-  }
 }
 
 @media only screen and (max-width: 600px) {
