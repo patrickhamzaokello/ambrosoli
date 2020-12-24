@@ -104,7 +104,7 @@ function moveToPrevSlide() {
   updateSlidePosition();
 }
 
-setInterval(moveToNextSlide, 5000);
+setInterval(moveToNextSlide, 20000);
 
 // end of hero slide
 
@@ -151,6 +151,55 @@ function featureMoveprev() {
     slideFeatureposition--;
   }
   updateFeatureSlidePosition();
+}
+
+// setInterval(featureMovenext, 5000);
+
+// end of featured slide
+
+// start of Team  slider
+
+let teamcarasoulposition = 0;
+const teamslides = document.getElementsByClassName("teamcollectiondiv");
+const totalTeamSlides = teamslides.length;
+
+document
+  .getElementById("teamactions--next")
+  .addEventListener("click", function () {
+    teamMovenext();
+  });
+
+document
+  .getElementById("teamactions--prev")
+  .addEventListener("click", function () {
+    teamMovePrev();
+  });
+
+function updateTeamSlidePosition() {
+  for (let slide of teamslides) {
+    slide.classList.remove("teamcollectiondiv--visible");
+    slide.classList.add("teamcollectiondiv--hidden");
+  }
+
+  teamslides[teamcarasoulposition].classList.add("teamcollectiondiv--visible");
+}
+
+function teamMovenext() {
+  if (teamcarasoulposition == totalTeamSlides - 1) {
+    teamcarasoulposition = 0;
+  } else {
+    teamcarasoulposition++;
+  }
+  updateTeamSlidePosition();
+}
+
+function teamMovePrev() {
+  if (teamcarasoulposition == 0) {
+    teamcarasoulposition = totalTeamSlides - 1;
+  } else {
+    teamcarasoulposition--;
+  }
+  updateTeamSlidePosition();
 }
 
 // setInterval(featureMovenext, 5000);
