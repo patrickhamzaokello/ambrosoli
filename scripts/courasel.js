@@ -1,3 +1,66 @@
+// start of company proile
+let profilePosition = 1;
+const companyprofile = document.getElementsByClassName("agencydetails");
+
+const histbtn = document.getElementById("History--btn");
+const missionbtn = document.getElementById("Mission--btn");
+const visionbtn = document.getElementById("Vision--btn");
+const corebtn = document.getElementById("Core--btn");
+
+const totalprofilestats = companyprofile.length;
+
+histbtn.addEventListener("click", function () {
+  console.log("hhistor btn");
+  const i = 0;
+  changeprofilediv(i);
+  histbtn.classList.add("active");
+  missionbtn.classList.remove("active");
+  visionbtn.classList.remove("active");
+  corebtn.classList.remove("active");
+});
+
+missionbtn.addEventListener("click", function () {
+  console.log("mission btn");
+  const i = 1;
+  changeprofilediv(i);
+  histbtn.classList.remove("active");
+  missionbtn.classList.add("active");
+  visionbtn.classList.remove("active");
+  corebtn.classList.remove("active");
+});
+
+visionbtn.addEventListener("click", function () {
+  console.log("vision btn");
+  const i = 2;
+  changeprofilediv(i);
+  histbtn.classList.remove("active");
+  missionbtn.classList.remove("active");
+  visionbtn.classList.add("active");
+  corebtn.classList.remove("active");
+});
+
+corebtn.addEventListener("click", function () {
+  console.log("core btn");
+  const i = 3;
+  changeprofilediv(i);
+  histbtn.classList.remove("active");
+  missionbtn.classList.remove("active");
+  visionbtn.classList.remove("active");
+  corebtn.classList.add("active");
+});
+
+function changeprofilediv(i) {
+  for (let slide of companyprofile) {
+    slide.classList.remove("agencycontent--visible");
+    slide.classList.add("agencycontent--hidden");
+  }
+  companyprofile[i].classList.add("agencycontent--visible");
+}
+
+// end company profile edit
+
+// start of heropage slider
+
 let slidePosition = 0;
 const slides = document.getElementsByClassName("carousel__item");
 const totalSlides = slides.length;
@@ -43,31 +106,53 @@ function moveToPrevSlide() {
 
 setInterval(moveToNextSlide, 5000);
 
-const gap = 16;
+// end of hero slide
 
-const carousel = document.getElementById("carousel"),
-  content = document.getElementById("content"),
-  next = document.getElementById("next"),
-  prev = document.getElementById("prev");
+// start of featured slider
 
-next.addEventListener("click", (e) => {
-  carousel.scrollBy(width + gap, 0);
-  if (carousel.scrollWidth !== 0) {
-    prev.style.display = "flex";
-  }
-  if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-    next.style.display = "none";
-  }
-});
-prev.addEventListener("click", (e) => {
-  carousel.scrollBy(-(width + gap), 0);
-  if (carousel.scrollLeft - width - gap <= 0) {
-    prev.style.display = "none";
-  }
-  if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-    next.style.display = "flex";
-  }
-});
+let slideFeatureposition = 0;
+const featureslides = document.getElementsByClassName("workcollection");
+const totalfeaturedslides = featureslides.length;
 
-let width = carousel.offsetWidth;
-window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
+document
+  .getElementById("featured__button--next")
+  .addEventListener("click", function () {
+    featureMovenext();
+  });
+
+document
+  .getElementById("featured__button--prev")
+  .addEventListener("click", function () {
+    featureMoveprev();
+  });
+
+function updateFeatureSlidePosition() {
+  for (let slide of featureslides) {
+    slide.classList.remove("workcollection--visible");
+    slide.classList.add("workcollection--hidden");
+  }
+
+  featureslides[slideFeatureposition].classList.add("workcollection--visible");
+}
+
+function featureMovenext() {
+  if (slideFeatureposition == totalfeaturedslides - 1) {
+    slideFeatureposition = 0;
+  } else {
+    slideFeatureposition++;
+  }
+  updateFeatureSlidePosition();
+}
+
+function featureMoveprev() {
+  if (slideFeatureposition == 0) {
+    slideFeatureposition = totalfeaturedslides - 1;
+  } else {
+    slideFeatureposition--;
+  }
+  updateFeatureSlidePosition();
+}
+
+// setInterval(featureMovenext, 5000);
+
+// end of featured slide

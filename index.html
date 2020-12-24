@@ -54,12 +54,13 @@
     </div>
 
     <div class="explore anime">
-        <h1 class="anime">Explore</h1>
-      </div>
+      <h1 class="anime">Explore</h1>
+    </div>
 
     <div class="carousel__actions">
-      <button id="carousel__button--prev" aria-label="previous slide"><</button>
-      <button id="carousel__button--next" aria-label="next slide">></button>
+      <button id="carousel__button--prev" aria-label="previous slide">
+        << /button>
+          <button id="carousel__button--next" aria-label="next slide">></button>
     </div>
   </div>
 
@@ -132,39 +133,100 @@
 
 
   <section id="" class="mission">
-    <div class="parent">
-      <div class="div1">
-        <button class="active">HISTORY</button>
-      </div>
-      <div class="div2">
-        <button>MISSION</button>
+    <div class="missionactionbutton">
+      <div class="parent">
+        <div class="div1">
+          <button id="History--btn" class="active">HISTORY</button>
+        </div>
+        <div class="div2">
+          <button id="Mission--btn">MISSION</button>
 
-      </div>
-      <div class="div3">
-        <button>VISION</button>
+        </div>
+        <div class="div3">
+          <button id="Vision--btn">VISION</button>
 
-      </div>
-      <div class="div4">
-        <button>CORE VALUES</button>
+        </div>
+        <div class="div4">
+          <button id="Core--btn">CORE VALUES</button>
+        </div>
       </div>
     </div>
 
-    <div class="agencydetails">
-      <img src="images/heroimage.JPG" alt="">
+    <div class="companyprofile">
+      <div id="historypage" class="agencydetails agencycontent--visible">
+        <img src="images/heroimage.JPG" alt="">
 
+        <div class="agencycontent ">
 
-      <div class="agencycontent">
+          <h1>History</h1>
 
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
-          sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
-          tempore
-          aspernatur architecto!</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
+            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+            tempore
+            aspernatur architecto!</p>
 
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
-          sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
-          tempore
-          aspernatur architecto!</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
+            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+            tempore
+            aspernatur architecto!</p>
+        </div>
       </div>
+
+      <div id="missionpage" class="agencydetails">
+        <img src="images/heroimage.JPG" alt="">
+
+        <div class="agencycontent">
+
+          <h1>Mission</h1>
+
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
+            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+            tempore
+            aspernatur architecto!</p>
+
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
+            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+            tempore
+            aspernatur architecto!</p>
+        </div>
+      </div>
+      <div id="visionpage" class="agencydetails">
+        <img src="images/heroimage.JPG" alt="">
+
+        <div class="agencycontent">
+
+          <h1>Vision</h1>
+
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
+            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+            tempore
+            aspernatur architecto!</p>
+
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
+            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+            tempore
+            aspernatur architecto!</p>
+        </div>
+      </div>
+      <div id="corevaluespage" class="agencydetails">
+        <img src="images/heroimage.JPG" alt="">
+
+        <div class="agencycontent">
+
+          <h1>Core Values</h1>
+
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
+            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+            tempore
+            aspernatur architecto!</p>
+
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
+            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+            tempore
+            aspernatur architecto!</p>
+        </div>
+      </div>
+
 
     </div>
 
@@ -182,100 +244,158 @@
       <div class="vl"></div>
     </div>
 
-    <div class="workcollection">
-      <div class="workcard">
-        <img class="featuredimage" src="images/heroimage.JPG" alt="">
-        <p class="title">Graphic Design Agency</p>
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+    <div class="featuredworkcarousel">
+      <div class="workcollection workcollection--visible">
+        <div class="workcard">
+          <img class="featuredimage" src="images/heroimage.JPG" alt="">
+          <p class="title">Graphic Design Agency 1</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+        </div>
+        <div class="workcard">
+          <img class="featuredimage" src="images/heroimage.JPG" alt="">
+          <p class="title">Graphic Design Agency 1</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+        </div>
+        <div class="workcard">
+          <img class="featuredimage" src="images/heroimage.JPG" alt="">
+          <p class="title">Graphic Design Agency 1</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+        </div>
+        <div class="workcard">
+          <img class="featuredimage" src="images/heroimage.JPG" alt="">
+          <p class="title">Graphic Design Agency 1</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+        </div>
 
       </div>
-      <div class="workcard">
-        <img class="featuredimage" src="images/heroimage.JPG" alt="">
-        <p class="title">Graphic Design Agency</p>
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+
+       <div class="workcollection">
+        <div class="workcard">
+          <img class="featuredimage" src="images/image2.jpg" alt="">
+          <p class="title">Graphic Design Agency 2</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+        </div>
+        <div class="workcard">
+          <img class="featuredimage" src="images/image2.jpg" alt="">
+          <p class="title">Graphic Design Agency 2</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+        </div>
+        <div class="workcard">
+          <img class="featuredimage" src="images/image2.jpg" alt="">
+          <p class="title">Graphic Design Agency 2</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+        </div>
+        <div class="workcard">
+          <img class="featuredimage" src="images/image2.jpg" alt="">
+          <p class="title">Graphic Design Agency 2</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+        </div>
 
       </div>
-      <div class="workcard">
-        <img class="featuredimage" src="images/heroimage.JPG" alt="">
-        <p class="title">Graphic Design Agency</p>
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+      <div class="workcollection">
+        <div class="workcard">
+          <img class="featuredimage" src="images/image1.jpg" alt="">
+          <p class="title">Graphic Design Agency 3</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+        </div>
+        <div class="workcard">
+          <img class="featuredimage" src="images/image1.JPG" alt="">
+          <p class="title">Graphic Design Agency 3</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+        </div>
+        <div class="workcard">
+          <img class="featuredimage" src="images/image1.jpg" alt="">
+          <p class="title">Graphic Design Agency 3</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+        </div>
+        <div class="workcard">
+          <img class="featuredimage" src="images/image1.jpg" alt="">
+          <p class="title">Graphic Design Agency 3</p>
+          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+
+        </div>
 
       </div>
-      <div class="workcard">
-        <img class="featuredimage" src="images/heroimage.JPG" alt="">
-        <p class="title">Graphic Design Agency</p>
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
 
+      <div class="carousel__actions">
+          <button id="featured__button--prev" aria-label="previous slide"><</button>
+          <button id="featured__button--next" aria-label="next slide">></button>
       </div>
+
+
     </div>
 
 
 
-    <div id="wrapper">
+    <!-- <div id="wrapper">
       <div id="carousel">
         <div id="content">
 
           <div class="item">
-            <img
-              src="https://lh3.googleusercontent.com/0OynDYRoCaQWJIUyiOrUVeoub0mLNrDUcUZrJXF2WHQD77o-F_g2EnqZqVevO954WzD7mC5qTg=w512-h512-l90-rj" />
-            <p class="title">Graphic Design Agency</p>
-            <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-          </div>
-
-
-          <div class="item">
-            <img
-              src="https://lh3.googleusercontent.com/e2WxnnYi-F9oN4e0HdLosbq8nlxezfIlxAze2Ba0zE2JR8Es7j-4tNtXc9atwL51FHpaTMtDgmc=w544-h544-l90-rj" />
-           <p class="title">Graphic Design Agency</p>
-            <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-            </div>
-
-          <div class="item">
-            <img
-              src="https://lh3.googleusercontent.com/u6ldIRFJNC856cVGIRsj8It7kz8_0WSTsbdJEOdwjkzZg0lLnn2fFFdhdkCf85HG9O0s2Ak72g=w512-h512-l90-rj" />
-           <p class="title">Graphic Design Agency</p>
-            <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-            </div>
-
-          <div class="item">
-            <img
-              src="https://lh3.googleusercontent.com/nlaN4QEwrQivvVocTsTmksMAaLdiOYRI6fqWgEvr8HeszJdwyOLWSMtVZQkFP_jIO47g-sbZ=w512-h512-l90-rj" />
-           <p class="title">Graphic Design Agency</p>
-            <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-            </div>
-
-          <div class="item">
-            <img
-              src="https://lh3.googleusercontent.com/ivQK-VEDrumpUKopbgrZKKIP70_i0B0r1LLa7PM1ugqtWJcGDRt8yxndLAVKZn3k5djl6_SS2w=w512-h512-l90-rj" />
- <p class="title">Graphic Design Agency</p>
+            <img src="images/heroimage.JPG" />
+            <p class="title">1Graphic Design Agency</p>
             <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
           </div>
 
           <div class="item">
-            <img
-              src="https://lh3.googleusercontent.com/mH0AFUazs5cUFTMGmXW-yCIhqSgJHbYqt08OjMgON0-x_Q5nsxhOzVwMHyZJ1e3dziP_ja7_=w544-h544-l90-rj" />
-          
-           <p class="title">Graphic Design Agency</p>
+            <img src="images/heroimage.JPG" />
+            <p class="title">2Graphic Design Agency</p>
             <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-            </div>
-
-
+          </div>
           <div class="item">
-            <img
-              src="https://lh3.googleusercontent.com/H3yFco2fMxBxlQ7wZ7-_OUA8zO8hmqTU9Fik9_lwA6L5pCP_JcCI0OR2XmdAUPzZS_XsayPDnw=w512-h512-l90-rj" />
- <p class="title">Graphic Design Agency</p>
+            <img src="images/heroimage.JPG" />
+            <p class="title">3Graphic Design Agency</p>
+            <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+          </div>
+          <div class="item">
+            <img src="images/heroimage.JPG" />
+            <p class="title">4Graphic Design Agency</p>
+            <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+          </div>
+          <div class="item">
+            <img src="images/heroimage.JPG" />
+            <p class="title">5Graphic Design Agency</p>
+            <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+          </div>
+          <div class="item">
+            <img src="images/heroimage.JPG" />
+            <p class="title">6Graphic Design Agency</p>
+            <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+          </div>
+          <div class="item">
+            <img src="images/heroimage.JPG" />
+            <p class="title">7Graphic Design Agency</p>
+            <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+          </div>
+          <div class="item">
+            <img src="images/heroimage.JPG" />
+            <p class="title">8Graphic Design Agency</p>
+            <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
+          </div>
+          <div class="item">
+            <img src="images/heroimage.JPG" />
+            <p class="title">9Graphic Design Agency</p>
             <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
           </div>
 
-          <div class="item">
-            <img
-              src="https://lh3.googleusercontent.com/URcwKIhfH3rPoeSfAKfsuKTwZzyNUv_f9TiLL3Nddscv-cufGX3kh6G8FzkJHzvgWrxKMu_Y36A=w512-h512-l90-rj" />
- <p class="title">Graphic Design Agency</p>
-            <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-          </div>
 
 
-          
+
+
+
+
         </div>
       </div>
       <button id="prev">
@@ -290,7 +410,7 @@
           <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
         </svg>
       </button>
-    </div>
+    </div> -->
 
 
 

@@ -137,8 +137,53 @@ header {
   opacity: 0;
 }
 
+.featuredworkcarousel {
+  overflow: hidden;
+  position: relative;
+
+  .workcollection,
+  .workcollection--hidden {
+    display: none;
+  }
+
+  .workcollection--visible {
+    display: grid;
+    animation: fadeVisibility 0.5s;
+  }
+
+  .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    button {
+      border-radius: 50px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+    }
+
+    #featured__button--prev {
+      margin-left: 20px;
+      background: #25a9e0;
+      color: black;
+    }
+
+    #featured__button--next {
+      margin-right: 20px;
+      background: #25a9e0;
+      color: black;
+    }
+  }
+}
+
 .carousel {
-  margin-top: 85px;
+  // margin-top: 85px;
   overflow: hidden;
   max-width: 2000px;
   position: relative;
@@ -208,9 +253,22 @@ header {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
     transform: opacity linear;
+  }
+}
+
+.companyprofile {
+  .agencydetails,
+  .agencycontent--hidden {
+    display: none;
+  }
+
+  .agencycontent--visible {
+    display: grid;
+    animation: fadeVisibility 0.5s;
   }
 }
 
@@ -275,6 +333,7 @@ section {
     height: 50px;
     padding-left: 1.5em;
     margin-left: 1.5em;
+    padding-top: 0.4em;
   }
 
   .icon-container {
@@ -386,7 +445,6 @@ img {
   display: grid;
   margin-bottom: 2em;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 15px;
 
@@ -766,6 +824,10 @@ footer {
 }
 
 @media only screen and (min-width: 800px) {
+  section {
+    padding: 10em 6em 4em 6em;
+  }
+
   #menu-bar {
     display: none;
     #navmenu {
@@ -799,12 +861,18 @@ footer {
     ul {
       display: grid;
       grid-template-columns: repeat(3, auto);
-      grid-gap: 1em;
+      grid-gap: 1.4em;
       li {
         margin-right: 2em;
 
+        .texttitle {
+          p {
+            font-size: unset;
+          }
+        }
+
         p {
-          font-size: 21px;
+          font-size: 13px;
         }
       }
     }
@@ -812,9 +880,21 @@ footer {
 }
 
 @media only screen and (min-width: 1250px) {
+  .carousel {
+    height: 90vh;
+  }
+  .missionactionbutton {
+    display: grid;
+    place-content: center;
+  }
   .parent {
     display: grid;
     grid-template-columns: repeat(4, auto);
+    place-content: center;
+
+    button {
+      padding: 1em 2em;
+    }
 
     .div1 {
       grid-area: unset;
@@ -842,9 +922,6 @@ footer {
       margin-bottom: 1em;
     }
   }
-  section {
-    padding: 10em 10em 4em 10em;
-  }
 
   .agencydetails {
     display: grid;
@@ -853,7 +930,7 @@ footer {
 
     .agencycontent {
       p {
-        font-size: 21px;
+        font-size: 15px;
       }
     }
   }
@@ -913,7 +990,6 @@ footer {
 
   #wrapper {
     width: 100%;
-    max-width: 964px;
     position: relative;
   }
 
@@ -932,17 +1008,22 @@ footer {
     display: flex;
     justify-content: center;
     align-content: center;
-    background: white;
+    background: #00e2ff;
+    color: #f2f2f2;
     border: none;
     padding: 8px;
     border-radius: 50%;
     outline: 0;
     cursor: pointer;
     position: absolute;
+
+    svg {
+      color: white !important;
+    }
   }
 
   #prev {
-    top: 25%;
+    top: 50%;
     left: 0;
     transform: translate(50%, -50%);
     display: none;
@@ -950,7 +1031,7 @@ footer {
   }
 
   #next {
-    top: 25%;
+    top: 50%;
     right: 0;
     transform: translate(-50%, -50%);
     width: 40px;
@@ -965,7 +1046,7 @@ footer {
   }
 
   .item {
-    width: 180px;
+    width: 250px;
   }
 }
 

@@ -142,8 +142,59 @@ header nav a:hover {
   opacity: 0;
 }
 
+.featuredworkcarousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.featuredworkcarousel .workcollection,
+.featuredworkcarousel .workcollection--hidden {
+  display: none;
+}
+
+.featuredworkcarousel .workcollection--visible {
+  display: -ms-grid;
+  display: grid;
+  -webkit-animation: fadeVisibility 0.5s;
+          animation: fadeVisibility 0.5s;
+}
+
+.featuredworkcarousel .carousel__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.featuredworkcarousel .carousel__actions button {
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.featuredworkcarousel .carousel__actions #featured__button--prev {
+  margin-left: 20px;
+  background: #25a9e0;
+  color: black;
+}
+
+.featuredworkcarousel .carousel__actions #featured__button--next {
+  margin-right: 20px;
+  background: #25a9e0;
+  color: black;
+}
+
 .carousel {
-  margin-top: 85px;
   overflow: hidden;
   max-width: 2000px;
   position: relative;
@@ -240,6 +291,18 @@ header nav a:hover {
   }
 }
 
+.companyprofile .agencydetails,
+.companyprofile .agencycontent--hidden {
+  display: none;
+}
+
+.companyprofile .agencycontent--visible {
+  display: -ms-grid;
+  display: grid;
+  -webkit-animation: fadeVisibility 0.5s;
+          animation: fadeVisibility 0.5s;
+}
+
 .featured {
   padding: 2em;
 }
@@ -308,6 +371,7 @@ section {
   height: 50px;
   padding-left: 1.5em;
   margin-left: 1.5em;
+  padding-top: 0.4em;
 }
 
 .transition2 .icon-container {
@@ -426,8 +490,6 @@ img {
   margin-bottom: 2em;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 15px;
 }
@@ -901,6 +963,9 @@ footer .footercontainer .footersocials img:hover {
 }
 
 @media only screen and (min-width: 800px) {
+  section {
+    padding: 10em 6em 4em 6em;
+  }
   #menu-bar {
     display: none;
   }
@@ -935,22 +1000,37 @@ footer .footercontainer .footersocials img:hover {
     display: grid;
     -ms-grid-columns: (auto)[3];
         grid-template-columns: repeat(3, auto);
-    grid-gap: 1em;
+    grid-gap: 1.4em;
   }
   .aboutus-container ul li {
     margin-right: 2em;
   }
+  .aboutus-container ul li .texttitle p {
+    font-size: unset;
+  }
   .aboutus-container ul li p {
-    font-size: 21px;
+    font-size: 13px;
   }
 }
 
 @media only screen and (min-width: 1250px) {
+  .carousel {
+    height: 90vh;
+  }
+  .missionactionbutton {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
   .parent {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (auto)[4];
         grid-template-columns: repeat(4, auto);
+    place-content: center;
+  }
+  .parent button {
+    padding: 1em 2em;
   }
   .parent .div1 {
     grid-area: unset;
@@ -974,9 +1054,6 @@ footer .footercontainer .footersocials img:hover {
     font-size: 15px;
     margin-bottom: 1em;
   }
-  section {
-    padding: 10em 10em 4em 10em;
-  }
   .agencydetails {
     display: -ms-grid;
     display: grid;
@@ -985,7 +1062,7 @@ footer .footercontainer .footersocials img:hover {
     grid-gap: 2em;
   }
   .agencydetails .agencycontent p {
-    font-size: 21px;
+    font-size: 15px;
   }
   .workcollection {
     display: -ms-grid;
@@ -1040,7 +1117,6 @@ footer .footercontainer .footersocials img:hover {
   }
   #wrapper {
     width: 100%;
-    max-width: 964px;
     position: relative;
   }
   #carousel {
@@ -1061,7 +1137,8 @@ footer .footercontainer .footersocials img:hover {
             justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
-    background: white;
+    background: #00e2ff;
+    color: #f2f2f2;
     border: none;
     padding: 8px;
     border-radius: 50%;
@@ -1069,8 +1146,12 @@ footer .footercontainer .footersocials img:hover {
     cursor: pointer;
     position: absolute;
   }
+  #prev svg,
+  #next svg {
+    color: white !important;
+  }
   #prev {
-    top: 25%;
+    top: 50%;
     left: 0;
     -webkit-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
@@ -1078,7 +1159,7 @@ footer .footercontainer .footersocials img:hover {
     width: 40px;
   }
   #next {
-    top: 25%;
+    top: 50%;
     right: 0;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -1094,7 +1175,7 @@ footer .footercontainer .footersocials img:hover {
             box-sizing: border-box;
   }
   .item {
-    width: 180px;
+    width: 250px;
   }
 }
 
