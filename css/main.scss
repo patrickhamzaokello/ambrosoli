@@ -415,6 +415,7 @@ header {
 .teamcarousel {
   overflow: hidden;
   position: relative;
+  padding-top: 4em;
 
   .teamcollectiondiv,
   .teamcollectiondiv--hidden {
@@ -431,10 +432,60 @@ header {
   .team__actions {
     display: flex;
     width: 100%;
+    position: absolute;
+    place-content: center;
+    top: 0;
+
+    button {
+      border-radius: 50px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      margin: 2em;
+    }
+
+    #teamactions--prev {
+      margin-left: 20px;
+      background: #a200ff;
+      color: white;
+    }
+
+    #teamactions--next {
+      margin-right: 20px;
+      background: #a200ff;
+      color: white;
+    }
+  }
+}
+
+.gallery {
+  position: relative;
+  .galleryartwork,
+  .galleryartwork--hidden {
+    text-align: center;
+    padding-bottom: 2em;
+    display: none;
+  }
+
+  .galleryartwork--visible {
+    display: grid;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .about-desc {
+    margin-bottom: 2em;
+  }
+
+  .office__actions {
+    display: flex;
+    width: 100%;
     justify-content: space-between;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 0;
 
     button {
       border-radius: 50px;
@@ -445,16 +496,16 @@ header {
       height: 40px;
     }
 
-    #teamactions--prev {
+    #officebtn--prev {
       margin-left: 20px;
-      background: #00ff80;
-      color: black;
+      background: #25a9e0;
+      color: white;
     }
 
-    #teamactions--next {
+    #officebtn--next {
       margin-right: 20px;
-      background: #00ff80;
-      color: black;
+      background: #25a9e0;
+      color: white;
     }
   }
 }
@@ -480,7 +531,7 @@ header {
 
 .clientintrotext {
   text-align: center;
-  padding: 3em 0;
+  padding-bottom: 3em;
 }
 
 .clientoveralcover {
@@ -497,6 +548,7 @@ header {
 
     .clientcontent {
       text-align: center;
+      padding-bottom: 3em;
     }
 
     .clientstory__action {
@@ -504,8 +556,7 @@ header {
       width: 100%;
       justify-content: space-between;
       position: absolute;
-      top: 25%;
-      transform: translateY(-25%);
+      bottom: 0;
 
       button {
         border-radius: 50px;
@@ -519,13 +570,13 @@ header {
       #clientbtn--prev {
         margin-left: 20px;
         background: #25a9e0;
-        color: black;
+        color: white;
       }
 
       #clientbtn--next {
         margin-right: 20px;
         background: #25a9e0;
-        color: black;
+        color: white;
       }
     }
 
@@ -546,6 +597,7 @@ header {
   }
 
   .clientlogos {
+    margin-top: 4em;
     .firstclientlogo {
       border: 1px solid gray;
       position: relative;

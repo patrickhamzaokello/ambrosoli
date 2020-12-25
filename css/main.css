@@ -418,6 +418,7 @@ header nav a:hover {
 .teamcarousel {
   overflow: hidden;
   position: relative;
+  padding-top: 4em;
 }
 
 .teamcarousel .teamcollectiondiv,
@@ -437,13 +438,9 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  place-content: center;
+  top: 0;
 }
 
 .teamcarousel .team__actions button {
@@ -453,18 +450,74 @@ header nav a:hover {
   cursor: pointer;
   width: 40px;
   height: 40px;
+  margin: 2em;
 }
 
 .teamcarousel .team__actions #teamactions--prev {
   margin-left: 20px;
-  background: #00ff80;
-  color: black;
+  background: #a200ff;
+  color: white;
 }
 
 .teamcarousel .team__actions #teamactions--next {
   margin-right: 20px;
-  background: #00ff80;
-  color: black;
+  background: #a200ff;
+  color: white;
+}
+
+.gallery {
+  position: relative;
+}
+
+.gallery .galleryartwork,
+.gallery .galleryartwork--hidden {
+  text-align: center;
+  padding-bottom: 2em;
+  display: none;
+}
+
+.gallery .galleryartwork--visible {
+  display: -ms-grid;
+  display: grid;
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.gallery .about-desc {
+  margin-bottom: 2em;
+}
+
+.gallery .office__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+
+.gallery .office__actions button {
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.gallery .office__actions #officebtn--prev {
+  margin-left: 20px;
+  background: #25a9e0;
+  color: white;
+}
+
+.gallery .office__actions #officebtn--next {
+  margin-right: 20px;
+  background: #25a9e0;
+  color: white;
 }
 
 #portfolio {
@@ -485,7 +538,7 @@ header nav a:hover {
 
 .clientintrotext {
   text-align: center;
-  padding: 3em 0;
+  padding-bottom: 3em;
 }
 
 .clientoveralcover .clientcarousel {
@@ -503,6 +556,7 @@ header nav a:hover {
 
 .clientoveralcover .clientcarousel .clientcontent {
   text-align: center;
+  padding-bottom: 3em;
 }
 
 .clientoveralcover .clientcarousel .clientstory__action {
@@ -514,9 +568,7 @@ header nav a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
-  top: 25%;
-  -webkit-transform: translateY(-25%);
-          transform: translateY(-25%);
+  bottom: 0;
 }
 
 .clientoveralcover .clientcarousel .clientstory__action button {
@@ -531,13 +583,13 @@ header nav a:hover {
 .clientoveralcover .clientcarousel .clientstory__action #clientbtn--prev {
   margin-left: 20px;
   background: #25a9e0;
-  color: black;
+  color: white;
 }
 
 .clientoveralcover .clientcarousel .clientstory__action #clientbtn--next {
   margin-right: 20px;
   background: #25a9e0;
-  color: black;
+  color: white;
 }
 
 .clientoveralcover .clientcarousel .slidecounter {
@@ -554,6 +606,10 @@ header nav a:hover {
   border-radius: 50px;
   text-align: center;
   color: #2e3191;
+}
+
+.clientoveralcover .clientlogos {
+  margin-top: 4em;
 }
 
 .clientoveralcover .clientlogos .firstclientlogo {

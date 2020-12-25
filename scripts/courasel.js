@@ -184,6 +184,7 @@ function updateTeamSlidePosition() {
   }
 
   teamslides[teamcarasoulposition].classList.add("teamcollectiondiv--visible");
+  document.getElementById("teamcounter").innerHTML = teamcarasoulposition + 1;
 }
 
 function teamMovenext() {
@@ -233,6 +234,8 @@ function updateofficeSlidePosition() {
   }
 
   officeslides[officecarousel].classList.add("galleryartwork--visible");
+  document.getElementById("officegallerycounter").innerHTML =
+    officecarousel + 1;
 }
 
 function officeMovenext() {
