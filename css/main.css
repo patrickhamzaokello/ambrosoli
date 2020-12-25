@@ -725,60 +725,21 @@ header nav a:hover {
 .portfoliocollectioncarousel {
   overflow: hidden;
   position: relative;
-  padding-top: 4em;
 }
 
 .portfoliocollectioncarousel .portfoliocollection,
 .portfoliocollectioncarousel .portfoliocollection--hidden {
   display: none;
-  padding-top: 2em;
-}
-
-.portfoliocollectioncarousel .portfoliocollection {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (auto)[3];
-      grid-template-rows: repeat(3, auto);
-  grid-gap: 1.5em;
 }
 
 .portfoliocollectioncarousel .portfoliocollection--visible {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  grid-gap: 1.5em;
   -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.portfoliocollectioncarousel .portfoliocollectionbtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  position: absolute;
-  place-content: center;
-  top: 0;
-}
-
-.portfoliocollectioncarousel .portfoliocollectionbtn button {
-  border-radius: 50px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  margin: 2em;
-}
-
-.portfoliocollectioncarousel .portfoliocollectionbtn #portfoliobtn--prev {
-  margin-left: 20px;
-  background: #25a9e0;
-  color: white;
-}
-
-.portfoliocollectioncarousel .portfoliocollectionbtn #portfoliobtn--next {
-  margin-right: 20px;
-  background: #25a9e0;
-  color: white;
 }
 
 .carousel {
@@ -879,9 +840,32 @@ header nav a:hover {
   }
 }
 
+.companyportfolio {
+  background: #3b3b3b;
+}
+
+.companyportfolio .sectionheading h5,
+.companyportfolio .sectionheading h1 {
+  color: lightgray;
+}
+
 .companyportfolio .parent button {
   padding: 1em;
   width: 100%;
+  background: none;
+  border: 1px solid white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.companyportfolio .parent button:hover {
+  background: white;
+  color: black;
+}
+
+.companyportfolio .parent .active {
+  background: white;
+  color: black;
 }
 
 .companyprofile .agencydetails,

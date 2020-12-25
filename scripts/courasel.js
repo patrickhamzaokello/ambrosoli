@@ -359,3 +359,60 @@ function moveTestimonialsprev() {
 setInterval(moveTestimonialsnext, 5000);
 
 // end of clienttestimonials slide
+
+// start of portfolio proile
+let pagePosition = 1;
+const portfoliopage = document.getElementsByClassName("portfoliocollection");
+
+const galA = document.getElementById("gala--btn");
+const galB = document.getElementById("galb--btn");
+const galC = document.getElementById("galc--btn");
+const galD = document.getElementById("gald--btn");
+
+galA.addEventListener("click", function () {
+  const i = 0;
+  changeportfolioiv(i);
+  galA.classList.add("active");
+  galB.classList.remove("active");
+  galC.classList.remove("active");
+  galD.classList.remove("active");
+});
+
+galB.addEventListener("click", function () {
+  const i = 1;
+
+  changeportfolioiv(i);
+  galA.classList.remove("active");
+  galB.classList.add("active");
+  galC.classList.remove("active");
+  galD.classList.remove("active");
+});
+
+galC.addEventListener("click", function () {
+  const i = 2;
+  changeportfolioiv(i);
+  galA.classList.remove("active");
+  galB.classList.remove("active");
+  galC.classList.add("active");
+  galD.classList.remove("active");
+});
+
+galD.addEventListener("click", function () {
+  const i = 3;
+  changeportfolioiv(i);
+  galA.classList.remove("active");
+  galB.classList.remove("active");
+  galC.classList.remove("active");
+  galD.classList.add("active");
+});
+
+function changeportfolioiv(i) {
+  console.log(i);
+  for (let slide of portfoliopage) {
+    slide.classList.remove("portfoliocollection--visible");
+    slide.classList.add("portfoliocollection--hidden");
+  }
+  portfoliopage[i].classList.add("portfoliocollection--visible");
+}
+
+// end portfollio profile edit

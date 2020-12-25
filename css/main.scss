@@ -705,55 +705,19 @@ header {
 .portfoliocollectioncarousel {
   overflow: hidden;
   position: relative;
-  padding-top: 4em; //for mobile only
 
   .portfoliocollection,
   .portfoliocollection--hidden {
     display: none;
-    padding-top: 2em;
-  }
-
-  .portfoliocollection {
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 1.5em;
   }
 
   .portfoliocollection--visible {
     display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 1.5em;
     -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
     animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
-
-  .portfoliocollectionbtn {
-    display: flex;
-    width: 100%;
-    position: absolute;
-    place-content: center;
-    top: 0;
-
-    button {
-      border-radius: 50px;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
-      margin: 2em;
-    }
-
-    #portfoliobtn--prev {
-      margin-left: 20px;
-      background: #25a9e0;
-      color: white;
-    }
-
-    #portfoliobtn--next {
-      margin-right: 20px;
-      background: #25a9e0;
-      color: white;
-    }
   }
 }
 
@@ -837,10 +801,31 @@ header {
 }
 
 .companyportfolio {
+  background: #3b3b3b;
+
+  .sectionheading {
+    h5,
+    h1 {
+      color: lightgray;
+    }
+  }
   .parent {
     button {
       padding: 1em;
       width: 100%;
+      background: none;
+      border: 1px solid white;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: white;
+      color: black;
+    }
+
+    .active {
+      background: white;
+      color: black;
     }
   }
 }
