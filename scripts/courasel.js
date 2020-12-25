@@ -303,3 +303,52 @@ function moveClientLogoprev() {
 // setInterval(moveToNextSlide, 20000);
 
 // end of clientlogo slide
+
+// start of clienttestimonials slider
+
+let testimonialposition = 0;
+const testimonies = document.getElementsByClassName("clientslideitem");
+const totaltestimonies = testimonies.length;
+
+document
+  .getElementById("clientbtn--next")
+  .addEventListener("click", function () {
+    moveTestimonialsnext();
+  });
+
+document
+  .getElementById("clientbtn--prev")
+  .addEventListener("click", function () {
+    moveTestimonialsprev();
+  });
+
+function updateTestimonials() {
+  for (let slide of testimonies) {
+    slide.classList.remove("clientslideitem--visible");
+    slide.classList.add("clientslideitem--hidden");
+  }
+
+  testimonies[testimonialposition].classList.add("clientslideitem--visible");
+}
+
+function moveTestimonialsnext() {
+  if (testimonialposition == totaltestimonies - 1) {
+    testimonialposition = 0;
+  } else {
+    testimonialposition++;
+  }
+  updateTestimonials();
+}
+
+function moveTestimonialsprev() {
+  if (testimonialposition == 0) {
+    testimonialposition = totaltestimonies - 1;
+  } else {
+    testimonialposition--;
+  }
+  updateTestimonials();
+}
+
+// setInterval(moveToNextSlide, 20000);
+
+// end of clienttestimonials slide
