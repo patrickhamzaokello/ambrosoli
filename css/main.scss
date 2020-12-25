@@ -381,6 +381,129 @@ header {
   }
 }
 
+#portfolio {
+  background: #272727;
+
+  .sectionheading {
+    h1 {
+      color: white;
+    }
+    h5 {
+      color: gray;
+    }
+  }
+
+  .gallery {
+    p {
+      color: lightgray;
+    }
+  }
+}
+
+.clientintrotext {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.clientoveralcover {
+  .clientcarousel {
+    position: relative;
+    .clientslideitem,
+    .clientslideitem--hidden {
+      display: none;
+    }
+
+    .clientslideitem--visible {
+      display: block;
+    }
+
+    .clientcontent {
+      text-align: center;
+    }
+
+    .clientstory__action {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      position: absolute;
+      top: 25%;
+      transform: translateY(-25%);
+
+      button {
+        border-radius: 50px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+      }
+
+      #clientbtn--prev {
+        margin-left: 20px;
+        background: #25a9e0;
+        color: black;
+      }
+
+      #clientbtn--next {
+        margin-right: 20px;
+        background: #25a9e0;
+        color: black;
+      }
+    }
+  }
+
+  .clientlogos {
+    .firstclientlogo {
+      border: 1px solid gray;
+      position: relative;
+      .logocontainer,
+      .logocontainer--hidden {
+        display: none;
+        padding: 1em;
+      }
+      .logocontainer img {
+        border: 1px solid gray;
+        padding: 1em;
+      }
+      .logocontainer--visible {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 1em;
+      }
+    }
+
+    .clientactionbtn {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      button {
+        border-radius: 50px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+      }
+
+      #clientactionbtn--prev {
+        margin-left: 20px;
+        background: #3333;
+        color: black;
+      }
+
+      #clientactionbtn--next {
+        margin-right: 20px;
+        background: #3333;
+        color: black;
+      }
+    }
+  }
+}
+
 .featuredworkcarousel {
   overflow: hidden;
   position: relative;
@@ -416,13 +539,13 @@ header {
 
     #featured__button--prev {
       margin-left: 20px;
-      background: #00ff80;
+      background: #25a9e0;
       color: black;
     }
 
     #featured__button--next {
       margin-right: 20px;
-      background: #00ff80;
+      background: #25a9e0;
       color: black;
     }
   }
@@ -924,89 +1047,6 @@ button {
   }
 }
 
-.card {
-  position: relative;
-
-  // width: 700px;
-  height: 400px;
-  overflow: hidden;
-
-  border-radius: 5px;
-}
-
-/*Light blue cover above the slide show*/
-.card::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 900;
-
-  display: block;
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(22, 59, 140, 0.2);
-}
-
-.card_part {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 7;
-
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-
-  transform: translateX(700px);
-  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/1.jpg?raw=true);
-  background-repeat: no-repeat;
-
-  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
-}
-
-.card_part.card_part-two {
-  z-index: 6;
-  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/2.jpg?raw=true);
-
-  background-repeat: no-repeat;
-
-  animation-delay: 7s;
-}
-
-.card_part.card_part-three {
-  z-index: 5;
-  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/3.jpg?raw=true);
-  background-repeat: no-repeat;
-
-  animation-delay: 14s;
-}
-
-.card_part.card_part-four {
-  z-index: 4;
-  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
-  background-repeat: no-repeat;
-
-  animation-delay: 21s;
-}
-
-@keyframes opaqTransition {
-  3% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(0);
-  }
-  28% {
-    transform: translateX(-700px);
-  }
-  100% {
-    transform: translateX(-700px);
-  }
-}
-
 .address {
   text-align: center;
   padding: 4em;
@@ -1077,7 +1117,7 @@ footer {
 
 @media only screen and (min-width: 800px) {
   section {
-    padding: 10em 6em 4em 6em;
+    padding: 6em 6em 4em 6em;
   }
 
   #menu-bar {
@@ -1128,6 +1168,12 @@ footer {
         }
       }
     }
+  }
+
+  .clientoveralcover {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 2em;
   }
 }
 
@@ -1211,11 +1257,51 @@ footer {
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 2em;
+    place-content: center;
+    position: relative;
 
-    .galleryartwork {
+    .galleryartwork,
+    .galleryartwork--hidden {
       text-align: center;
+
+      display: none;
+    }
+
+    .galleryartwork--visible {
+      display: grid;
+      -webkit-animation: slide-in-right 0.5s
+        cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    .office__actions {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      button {
+        border-radius: 50px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+      }
+
+      #officebtn--prev {
+        margin-left: 20px;
+        background: #25a9e0;
+        color: black;
+      }
+
+      #officebtn--next {
+        margin-right: 20px;
+        background: #25a9e0;
+        color: black;
+      }
     }
   }
 

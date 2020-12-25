@@ -1,828 +1,874 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="images/AW f.png" type="image/gif" sizes="16x16" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="icon" href="images/AW f.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Ambrosoli</title>
+  </head>
 
-  <link rel="stylesheet" href="css/main.css" />
-  <title>Ambrosoli</title>
-</head>
+  <body>
+    <div id="header" class="nav-container">
+      <header>
+        <a href="#" class="logo">
+          <img src="images/AW b.png" alt="" />
+        </a>
 
-<body>
-  <div id="header" class="nav-container">
-    <header>
-      <a href="#" class="logo">
-        <img src="images/AW b.png" alt="">
-      </a>
-
-      <div id="menu-bar">
-        <div id="navmenu" onclick="menuhandler()">
-          <div id="bar1" class="bar"></div>
-          <div id="bar2" class="bar"></div>
-          <div id="bar3" class="bar"></div>
-        </div>
-      </div>
-
-      <nav id="nav">
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="featuredworks.html">Featured</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#clientsection">Clients</a></li>
-          <li><a href="#contactsection">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-
-
-  <div class="carousel">
-    <div class="carousel__item carousel__item--visible">
-      <img src="images/homepageimages/image1.JPG" alt="">
-    </div>
-    <div class="carousel__item">
-      <img src="images/homepageimages/image2.jpg" alt="">
-    </div>
-    <div class="carousel__item">
-      <img src="images/homepageimages/image3.JPG" alt="">
-    </div>
-
-    <div class="explore heartbeat">
-      <a href="#homepage">
-        <h1 class="anime">
-          Explore
-        </h1>
-      </a>
-    </div>
-
-    <div class="carousel__actions">
-      <button id="carousel__button--prev" aria-label="previous slide">
-        <</button>
-          <button id="carousel__button--next" aria-label="next slide">></button>
-    </div>
-  </div>
-
-
-
-  <section id="homepage" class="aboutus">
-
-    <div class="sectionheading">
-      <h5>A BRIED INFO ABOUT US</h5>
-      <h1>WHO WE ARE</h1>
-      <div class="vl"></div>
-    </div>
-    <div class="aboutus-container">
-      <ul>
-        <li class="transition2">
-
-          <div class="cardheader">
-            <div class="icon-container one">
-              <img src="images/designlogo.png" alt="" />
-            </div>
-
-            <div class="texttitle">
-              <p class="about-title">Graphic Design Agency</p>
-
-            </div>
+        <div id="menu-bar">
+          <div id="navmenu" onclick="menuhandler()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
           </div>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
-            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
-            tempore aspernatur architecto!</p>
-        </li>
-        <li class="transition2">
-
-          <div class="cardheader">
-            <div class="icon-container two">
-              <img src="images/designlogo.png" alt="" />
-            </div>
-
-            <div class="texttitle">
-              <p class="about-title">Website Design Agency</p>
-
-            </div>
-
-          </div>
-          <p class="about-desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam sapiente corporis
-            quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa tempore aspernatur
-            architecto!</p>
-        </li>
-        <li class="transition2">
-
-          <div class="cardheader">
-            <div class="icon-container three">
-              <img src="images/designlogo.png" alt="" />
-            </div>
-
-            <div class="texttitle">
-              <p class="about-title">Muse Developer</p>
-
-            </div>
-          </div>
-
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
-            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
-            tempore aspernatur architecto!</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-
-
-  <section id="" class="mission">
-    <div class="missionactionbutton">
-      <div class="parent">
-        <div class="div1">
-          <button id="History--btn" class="active">HISTORY</button>
         </div>
-        <div class="div2">
-          <button id="Mission--btn">MISSION</button>
 
-        </div>
-        <div class="div3">
-          <button id="Vision--btn">VISION</button>
-
-        </div>
-        <div class="div4">
-          <button id="Core--btn">CORE VALUES</button>
-        </div>
-      </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="featuredworks.html">Featured</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#clientsection">Clients</a></li>
+            <li><a href="#contactsection">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
 
-    <div class="companyprofile">
-      <div id="historypage" class="agencydetails agencycontent--visible">
-        <img src="images/heroimage.JPG" alt="">
-
-        <div class="agencycontent ">
-
-          <h1>History</h1>
-
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
-            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
-            tempore
-            aspernatur architecto!</p>
-
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
-            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
-            tempore
-            aspernatur architecto!</p>
-        </div>
+    <div class="carousel">
+      <div class="carousel__item carousel__item--visible">
+        <img src="images/homepageimages/image1.JPG" alt="" />
+      </div>
+      <div class="carousel__item">
+        <img src="images/homepageimages/image2.jpg" alt="" />
+      </div>
+      <div class="carousel__item">
+        <img src="images/homepageimages/image3.JPG" alt="" />
       </div>
 
-      <div id="missionpage" class="agencydetails">
-        <img src="images/heroimage.JPG" alt="">
-
-        <div class="agencycontent">
-
-          <h1>Mission</h1>
-
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
-            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
-            tempore
-            aspernatur architecto!</p>
-
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
-            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
-            tempore
-            aspernatur architecto!</p>
-        </div>
-      </div>
-      <div id="visionpage" class="agencydetails">
-        <img src="images/heroimage.JPG" alt="">
-
-        <div class="agencycontent">
-
-          <h1>Vision</h1>
-
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
-            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
-            tempore
-            aspernatur architecto!</p>
-
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
-            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
-            tempore
-            aspernatur architecto!</p>
-        </div>
-      </div>
-      <div id="corevaluespage" class="agencydetails">
-        <img src="images/heroimage.JPG" alt="">
-
-        <div class="agencycontent">
-
-          <h1>Core Values</h1>
-
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
-            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
-            tempore
-            aspernatur architecto!</p>
-
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum, totam
-            sapiente corporis quasi, iusto sunt velit reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
-            tempore
-            aspernatur architecto!</p>
-        </div>
-      </div>
-
-
-    </div>
-
-
-
-  </section>
-
-
-
-  <section id="featured" class="featuredworks">
-
-    <div class="sectionheading">
-      <h5>LATEST FROM OUR STUDIO</h5>
-      <h1>FEATURED WORKS</h1>
-      <div class="vl"></div>
-    </div>
-
-    <div class="featuredworkcarousel">
-      <div class="workcollection workcollection--visible">
-        <div class="workcard">
-          <img class="featuredimage" src="images/heroimage.JPG" alt="">
-          <p class="title">Graphic Design Agency 1</p>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-
-        </div>
-        <div class="workcard">
-          <img class="featuredimage" src="images/heroimage.JPG" alt="">
-          <p class="title">Graphic Design Agency 1</p>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-
-        </div>
-        <div class="workcard">
-          <img class="featuredimage" src="images/heroimage.JPG" alt="">
-          <p class="title">Graphic Design Agency 1</p>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-
-        </div>
-        <div class="workcard">
-          <img class="featuredimage" src="images/heroimage.JPG" alt="">
-          <p class="title">Graphic Design Agency 1</p>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-
-        </div>
-
-      </div>
-
-
-      <div class="workcollection">
-        <div class="workcard">
-          <img class="featuredimage" src="images/image2.jpg" alt="">
-          <p class="title">Graphic Design Agency 2</p>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-
-        </div>
-        <div class="workcard">
-          <img class="featuredimage" src="images/image2.jpg" alt="">
-          <p class="title">Graphic Design Agency 2</p>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-
-        </div>
-        <div class="workcard">
-          <img class="featuredimage" src="images/image2.jpg" alt="">
-          <p class="title">Graphic Design Agency 2</p>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-
-        </div>
-        <div class="workcard">
-          <img class="featuredimage" src="images/image2.jpg" alt="">
-          <p class="title">Graphic Design Agency 2</p>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-
-        </div>
-
-      </div>
-      <div class="workcollection">
-        <div class="workcard">
-          <img class="featuredimage" src="images/image1.jpg" alt="">
-          <p class="title">Graphic Design Agency 3</p>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-
-        </div>
-        <div class="workcard">
-          <img class="featuredimage" src="images/image1.JPG" alt="">
-          <p class="title">Graphic Design Agency 3</p>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-
-        </div>
-        <div class="workcard">
-          <img class="featuredimage" src="images/image1.jpg" alt="">
-          <p class="title">Graphic Design Agency 3</p>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-
-        </div>
-        <div class="workcard">
-          <img class="featuredimage" src="images/image1.jpg" alt="">
-          <p class="title">Graphic Design Agency 3</p>
-          <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-
-        </div>
-
+      <div class="explore heartbeat">
+        <a href="#homepage">
+          <h1 class="anime">Explore</h1>
+        </a>
       </div>
 
       <div class="carousel__actions">
-        <button class="pulsate-fwd" id="featured__button--prev" aria-label="previous slide">
-          <</button>
-            <button class="pulsate-fwd" id="featured__button--next" aria-label="next slide">></button>
+        <button id="carousel__button--prev" aria-label="previous slide">
+          <
+        </button>
+        <button id="carousel__button--next" aria-label="next slide">></button>
       </div>
-
-
     </div>
 
-
-  </section>
-
-
-
-
-  <section id="services" class="skillsrating">
-
-    <div class="producdescription">
-      <img class="featuredimage" src="images/heroimage.JPG" alt="">
-      <p class="title">Our Design Agency</p>
-      <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-    </div>
-
-    <div class="graphsection bar-graph bar-graph-horizontal bar-graph-one">
-      <div class="bar-one">
-        <p>WEB DESIGN</p>
-        <div class="bar" data-percentage="95.6%"></div>
+    <section id="homepage" class="aboutus">
+      <div class="sectionheading">
+        <h5>A BRIED INFO ABOUT US</h5>
+        <h1>WHO WE ARE</h1>
+        <div class="vl"></div>
       </div>
-      <div class="bar-two">
-        <p>GRAPHIC DESIGN</p>
-        <div class="bar" data-percentage="71%"></div>
-      </div>
-      <div class="bar-three">
-        <p>MOTION GRAPHIC</p>
-        <div class="bar" data-percentage="74.7%"></div>
-      </div>
+      <div class="aboutus-container">
+        <ul>
+          <li class="transition2">
+            <div class="cardheader">
+              <div class="icon-container one">
+                <img src="images/designlogo.png" alt="" />
+              </div>
 
-      <div class="bar-four">
-        <p>3D RENDERING</p>
-        <div class="bar" data-percentage="76.8%"></div>
-      </div>
+              <div class="texttitle">
+                <p class="about-title">Graphic Design Agency</p>
+              </div>
+            </div>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum, totam sapiente corporis quasi, iusto sunt velit
+              reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+              tempore aspernatur architecto!
+            </p>
+          </li>
+          <li class="transition2">
+            <div class="cardheader">
+              <div class="icon-container two">
+                <img src="images/designlogo.png" alt="" />
+              </div>
 
+              <div class="texttitle">
+                <p class="about-title">Website Design Agency</p>
+              </div>
+            </div>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum, totam sapiente corporis quasi, iusto sunt velit
+              reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+              tempore aspernatur architecto!
+            </p>
+          </li>
+          <li class="transition2">
+            <div class="cardheader">
+              <div class="icon-container three">
+                <img src="images/designlogo.png" alt="" />
+              </div>
 
-    </div>
-
-
-  </section>
-
-
-  <section id="team" class="featuredworks">
-    <div class="sectionheading">
-      <h5>MIND BEHIND THE SERVICES</h5>
-      <h1>MEET THE TEAM</h1>
-      <div class="vl"></div>
-    </div>
-
-    <div class="teamcarousel">
-      <div class="teamcollectiondiv teamcollectiondiv--visible slide-in-right ">
-        <div class="teamcard">
-          <img src="images/heroimage.JPG" alt="">
-
-          <div class="teamcontactdinfo">
-            <p class="title">Patrick Hamza1</p>
-            <p class="teamrole">Creative Director</p>
-            <div class="teamdes">
-              <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
+              <div class="texttitle">
+                <p class="about-title">Muse Developer</p>
+              </div>
             </div>
 
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum, totam sapiente corporis quasi, iusto sunt velit
+              reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+              tempore aspernatur architecto!
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="" class="mission">
+      <div class="missionactionbutton">
+        <div class="parent">
+          <div class="div1">
+            <button id="History--btn" class="active">HISTORY</button>
+          </div>
+          <div class="div2">
+            <button id="Mission--btn">MISSION</button>
+          </div>
+          <div class="div3">
+            <button id="Vision--btn">VISION</button>
+          </div>
+          <div class="div4">
+            <button id="Core--btn">CORE VALUES</button>
           </div>
         </div>
-        <div class="teamcard">
-          <img src="images/heroimage.JPG" alt="">
-
-          <div class="teamcontactdinfo">
-            <p class="title">Patrick Hamza1</p>
-            <p class="teamrole">Creative Director</p>
-            <div class="teamdes">
-              <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </div>
-
-          </div>
-        </div>
-
-        <div class="teamcard">
-          <img src="images/heroimage.JPG" alt="">
-
-          <div class="teamcontactdinfo">
-            <p class="title">Mercy Popcorn1</p>
-            <p class="teamrole">Creative Director</p>
-            <div class="teamdes">
-              <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </div>
-
-
-          </div>
-        </div>
-        <div class="teamcard">
-          <img src="images/heroimage.JPG" alt="">
-
-          <div class="teamcontactdinfo">
-            <p class="title">Steve Ogweno1</p>
-            <p class="teamrole">Creative Director</p>
-            <div class="teamdes">
-              <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </div>
-
-
-          </div>
-        </div>
-
       </div>
-      <div class="teamcollectiondiv slide-in-right ">
-        <div class="teamcard">
-          <img src="images/heroimage.JPG" alt="">
 
-          <div class="teamcontactdinfo">
-            <p class="title">Patrick Hamza2</p>
-            <p class="teamrole">Creative Director</p>
-            <div class="teamdes">
-              <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="companyprofile">
+        <div id="historypage" class="agencydetails agencycontent--visible">
+          <img src="images/heroimage.JPG" alt="" />
 
-            </div>
+          <div class="agencycontent">
+            <h1>History</h1>
 
-          </div>
-        </div>
-        <div class="teamcard">
-          <img src="images/heroimage.JPG" alt="">
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum, totam sapiente corporis quasi, iusto sunt velit
+              reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+              tempore aspernatur architecto!
+            </p>
 
-          <div class="teamcontactdinfo">
-            <p class="title">Patrick Hamza2</p>
-            <p class="teamrole">Creative Director</p>
-            <div class="teamdes">
-              <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </div>
-
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum, totam sapiente corporis quasi, iusto sunt velit
+              reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+              tempore aspernatur architecto!
+            </p>
           </div>
         </div>
 
-        <div class="teamcard">
-          <img src="images/heroimage.JPG" alt="">
+        <div id="missionpage" class="agencydetails">
+          <img src="images/heroimage.JPG" alt="" />
 
-          <div class="teamcontactdinfo">
-            <p class="title">Mercy Popcorn2</p>
-            <p class="teamrole">Creative Director</p>
-            <div class="teamdes">
-              <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="agencycontent">
+            <h1>Mission</h1>
 
-            </div>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum, totam sapiente corporis quasi, iusto sunt velit
+              reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+              tempore aspernatur architecto!
+            </p>
 
-
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum, totam sapiente corporis quasi, iusto sunt velit
+              reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+              tempore aspernatur architecto!
+            </p>
           </div>
         </div>
-        <div class="teamcard">
-          <img src="images/heroimage.JPG" alt="">
+        <div id="visionpage" class="agencydetails">
+          <img src="images/heroimage.JPG" alt="" />
 
-          <div class="teamcontactdinfo">
-            <p class="title">Steve Ogweno2</p>
-            <p class="teamrole">Creative Director</p>
-            <div class="teamdes">
-              <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="agencycontent">
+            <h1>Vision</h1>
 
-            </div>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum, totam sapiente corporis quasi, iusto sunt velit
+              reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+              tempore aspernatur architecto!
+            </p>
 
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum, totam sapiente corporis quasi, iusto sunt velit
+              reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+              tempore aspernatur architecto!
+            </p>
+          </div>
+        </div>
+        <div id="corevaluespage" class="agencydetails">
+          <img src="images/heroimage.JPG" alt="" />
 
+          <div class="agencycontent">
+            <h1>Core Values</h1>
+
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum, totam sapiente corporis quasi, iusto sunt velit
+              reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+              tempore aspernatur architecto!
+            </p>
+
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum, totam sapiente corporis quasi, iusto sunt velit
+              reiciendis laboriosam unde maxime vero quisquam eius itaque ipsa
+              tempore aspernatur architecto!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="featuredworks">
+      <div class="sectionheading">
+        <h5>LATEST FROM OUR STUDIO</h5>
+        <h1>FEATURED WORKS</h1>
+        <div class="vl"></div>
+      </div>
+
+      <div class="featuredworkcarousel">
+        <div class="workcollection workcollection--visible">
+          <div class="workcard">
+            <img class="featuredimage" src="images/heroimage.JPG" alt="" />
+            <p class="title">Graphic Design Agency 1</p>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum!
+            </p>
+          </div>
+          <div class="workcard">
+            <img class="featuredimage" src="images/heroimage.JPG" alt="" />
+            <p class="title">Graphic Design Agency 1</p>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum!
+            </p>
+          </div>
+          <div class="workcard">
+            <img class="featuredimage" src="images/heroimage.JPG" alt="" />
+            <p class="title">Graphic Design Agency 1</p>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum!
+            </p>
+          </div>
+          <div class="workcard">
+            <img class="featuredimage" src="images/heroimage.JPG" alt="" />
+            <p class="title">Graphic Design Agency 1</p>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum!
+            </p>
           </div>
         </div>
 
-      </div>
-
-      <div class="teamcollectiondiv slide-in-right ">
-        <div class="teamcard">
-          <img src="images/heroimage.JPG" alt="">
-
-          <div class="teamcontactdinfo">
-            <p class="title">Patrick Hamza3</p>
-            <p class="teamrole">Creative Director</p>
-            <div class="teamdes">
-              <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </div>
-
+        <div class="workcollection">
+          <div class="workcard">
+            <img class="featuredimage" src="images/image2.jpg" alt="" />
+            <p class="title">Graphic Design Agency 2</p>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum!
+            </p>
+          </div>
+          <div class="workcard">
+            <img class="featuredimage" src="images/image2.jpg" alt="" />
+            <p class="title">Graphic Design Agency 2</p>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum!
+            </p>
+          </div>
+          <div class="workcard">
+            <img class="featuredimage" src="images/image2.jpg" alt="" />
+            <p class="title">Graphic Design Agency 2</p>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum!
+            </p>
+          </div>
+          <div class="workcard">
+            <img class="featuredimage" src="images/image2.jpg" alt="" />
+            <p class="title">Graphic Design Agency 2</p>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum!
+            </p>
           </div>
         </div>
-        <div class="teamcard">
-          <img src="images/heroimage.JPG" alt="">
-
-          <div class="teamcontactdinfo">
-            <p class="title">Patrick Hamza3</p>
-            <p class="teamrole">Creative Director</p>
-            <div class="teamdes">
-              <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </div>
-
+        <div class="workcollection">
+          <div class="workcard">
+            <img class="featuredimage" src="images/image1.jpg" alt="" />
+            <p class="title">Graphic Design Agency 3</p>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum!
+            </p>
+          </div>
+          <div class="workcard">
+            <img class="featuredimage" src="images/image1.JPG" alt="" />
+            <p class="title">Graphic Design Agency 3</p>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum!
+            </p>
+          </div>
+          <div class="workcard">
+            <img class="featuredimage" src="images/image1.jpg" alt="" />
+            <p class="title">Graphic Design Agency 3</p>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum!
+            </p>
+          </div>
+          <div class="workcard">
+            <img class="featuredimage" src="images/image1.jpg" alt="" />
+            <p class="title">Graphic Design Agency 3</p>
+            <p class="about-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet rerum!
+            </p>
           </div>
         </div>
 
-        <div class="teamcard">
-          <img src="images/heroimage.JPG" alt="">
+        <div class="carousel__actions">
+          <button
+            class="pulsate-fwd"
+            id="featured__button--prev"
+            aria-label="previous slide"
+          >
+            <
+          </button>
+          <button
+            class="pulsate-fwd"
+            id="featured__button--next"
+            aria-label="next slide"
+          >
+            >
+          </button>
+        </div>
+      </div>
+    </section>
 
-          <div class="teamcontactdinfo">
-            <p class="title">Mercy Popcorn3</p>
-            <p class="teamrole">Creative Director</p>
-            <div class="teamdes">
-              <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <section id="services" class="skillsrating">
+      <div class="producdescription">
+        <img class="featuredimage" src="images/heroimage.JPG" alt="" />
+        <p class="title">Our Design Agency</p>
+        <p class="about-desc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+          eveniet rerum!
+        </p>
+      </div>
 
+      <div class="graphsection bar-graph bar-graph-horizontal bar-graph-one">
+        <div class="bar-one">
+          <p>WEB DESIGN</p>
+          <div class="bar" data-percentage="95.6%"></div>
+        </div>
+        <div class="bar-two">
+          <p>GRAPHIC DESIGN</p>
+          <div class="bar" data-percentage="71%"></div>
+        </div>
+        <div class="bar-three">
+          <p>MOTION GRAPHIC</p>
+          <div class="bar" data-percentage="74.7%"></div>
+        </div>
+
+        <div class="bar-four">
+          <p>3D RENDERING</p>
+          <div class="bar" data-percentage="76.8%"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="featuredworks">
+      <div class="sectionheading">
+        <h5>MIND BEHIND THE SERVICES</h5>
+        <h1>MEET THE TEAM</h1>
+        <div class="vl"></div>
+      </div>
+
+      <div class="teamcarousel">
+        <div
+          class="teamcollectiondiv teamcollectiondiv--visible slide-in-right"
+        >
+          <div class="teamcard">
+            <img src="images/heroimage.JPG" alt="" />
+
+            <div class="teamcontactdinfo">
+              <p class="title">Patrick Hamza1</p>
+              <p class="teamrole">Creative Director</p>
+              <div class="teamdes">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="teamcard">
+            <img src="images/heroimage.JPG" alt="" />
 
+            <div class="teamcontactdinfo">
+              <p class="title">Patrick Hamza1</p>
+              <p class="teamrole">Creative Director</p>
+              <div class="teamdes">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
 
+          <div class="teamcard">
+            <img src="images/heroimage.JPG" alt="" />
+
+            <div class="teamcontactdinfo">
+              <p class="title">Mercy Popcorn1</p>
+              <p class="teamrole">Creative Director</p>
+              <div class="teamdes">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="teamcard">
+            <img src="images/heroimage.JPG" alt="" />
+
+            <div class="teamcontactdinfo">
+              <p class="title">Steve Ogweno1</p>
+              <p class="teamrole">Creative Director</p>
+              <div class="teamdes">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="teamcard">
-          <img src="images/heroimage.JPG" alt="">
+        <div class="teamcollectiondiv slide-in-right">
+          <div class="teamcard">
+            <img src="images/heroimage.JPG" alt="" />
 
-          <div class="teamcontactdinfo">
-            <p class="title">Steve Ogweno3</p>
-            <p class="teamrole">Creative Director</p>
-            <div class="teamdes">
-              <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
+            <div class="teamcontactdinfo">
+              <p class="title">Patrick Hamza2</p>
+              <p class="teamrole">Creative Director</p>
+              <div class="teamdes">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="teamcard">
+            <img src="images/heroimage.JPG" alt="" />
 
+            <div class="teamcontactdinfo">
+              <p class="title">Patrick Hamza2</p>
+              <p class="teamrole">Creative Director</p>
+              <div class="teamdes">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
 
+          <div class="teamcard">
+            <img src="images/heroimage.JPG" alt="" />
+
+            <div class="teamcontactdinfo">
+              <p class="title">Mercy Popcorn2</p>
+              <p class="teamrole">Creative Director</p>
+              <div class="teamdes">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="teamcard">
+            <img src="images/heroimage.JPG" alt="" />
+
+            <div class="teamcontactdinfo">
+              <p class="title">Steve Ogweno2</p>
+              <p class="teamrole">Creative Director</p>
+              <div class="teamdes">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-      </div>
-      
+        <div class="teamcollectiondiv slide-in-right">
+          <div class="teamcard">
+            <img src="images/heroimage.JPG" alt="" />
 
-      <div class="team__actions">
-        <button class="pulsate-fwd" id="teamactions--prev" aria-label="previous slide">
-          prev</button>
-        <button class="pulsate-fwd" id="teamactions--next" aria-label="next slide">next</button>
-      </div>
+            <div class="teamcontactdinfo">
+              <p class="title">Patrick Hamza3</p>
+              <p class="teamrole">Creative Director</p>
+              <div class="teamdes">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="teamcard">
+            <img src="images/heroimage.JPG" alt="" />
 
+            <div class="teamcontactdinfo">
+              <p class="title">Patrick Hamza3</p>
+              <p class="teamrole">Creative Director</p>
+              <div class="teamdes">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
 
-    </div>
+          <div class="teamcard">
+            <img src="images/heroimage.JPG" alt="" />
 
+            <div class="teamcontactdinfo">
+              <p class="title">Mercy Popcorn3</p>
+              <p class="teamrole">Creative Director</p>
+              <div class="teamdes">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="teamcard">
+            <img src="images/heroimage.JPG" alt="" />
 
-  </section>
-
-  <section id="portfolio" class="featuredworks">
-
-    <div class="sectionheading">
-      <h5>IDEAS FACTORY</h5>
-      <h1>OFFICE GALLERY</h1>
-      <div class="vl"></div>
-    </div>
-
-    <div class="gallery">
-      <div class="galleryartwork">
-        <img class="featuredimage" src="images/heroimage.JPG" alt="">
-        <p class="title">Graphic Design Agency</p>
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-      </div>
-
-      <div class="galleryartwork">
-        <img class="featuredimage" src="images/heroimage.JPG" alt="">
-        <p class="title">Graphic Design Agency</p>
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-      </div>
-      <div class="galleryartwork">
-        <img class="featuredimage" src="images/heroimage.JPG" alt="">
-        <p class="title">Graphic Design Agency</p>
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-      </div>
-      <div class="galleryartwork">
-        <img class="featuredimage" src="images/heroimage.JPG" alt="">
-        <p class="title">Graphic Design Agency</p>
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-      </div>
-
-      <div class="galleryartwork">
-        <img class="featuredimage" src="images/heroimage.JPG" alt="">
-        <p class="title">Graphic Design Agency</p>
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-      </div>
-      <div class="galleryartwork">
-        <img class="featuredimage" src="images/heroimage.JPG" alt="">
-        <p class="title">Graphic Design Agency</p>
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-      </div>
-      <div class="galleryartwork">
-        <img class="featuredimage" src="images/heroimage.JPG" alt="">
-        <p class="title">Graphic Design Agency</p>
-        <p class="about-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet rerum!</p>
-      </div>
-    </div>
-
-  </section>
-
-
-  <section class="featured" id="clientsection">
-    <div class="sectionheading">
-      <h5>ENSURING SATISFACTION</h5>
-      <h1>OUR CLIENTS</h1>
-      <div class="vl"></div>
-    </div>
-
-
-    <div class="card">
-
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore</p>
-
-      <div class="card_part card_part-one">
-
-
-
-      </div>
-
-      <!-- Photo 2 -->
-      <div class="card_part card_part-two">
-
-      </div>
-
-      <!-- Photo 3 -->
-      <div class="card_part card_part-three">
-      </div>
-
-      <!-- Photo 4 -->
-      <div class="card_part card_part-four">
-      </div>
-
-    </div>
-
-    </div>
-  </section>
-
-
-
-  <section>
-    <div class="sectionheading">
-      <h5>SOME GREAT DESIGN IDEAS</h5>
-      <h1>OUR PORTFOLIO</h1>
-      <div class="vl"></div>
-    </div>
-    <div class="parent">
-      <div class="div1">
-        <button class="active">HISTORY</button>
-      </div>
-      <div class="div2">
-        <button>MISSION</button>
-
-      </div>
-      <div class="div3">
-        <button>VISION</button>
-
-      </div>
-      <div class="div4">
-        <button>CORE VALUES</button>
-      </div>
-    </div>
-
-
-    <div class="container">
-      <div class="box">
-        <img src="https://source.unsplash.com/1000x800">
-        <span>CSS</span>
-      </div>
-      <div class="box">
-        <img src="https://source.unsplash.com/1000x802">
-        <span>Image</span>
-      </div>
-      <div class="box">
-        <img src="https://source.unsplash.com/1000x804">
-        <span>Hover</span>
-      </div>
-      <div class="box">
-        <img src="https://source.unsplash.com/1000x806">
-        <span>Effect</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="contactsection" class="featuredworks">
-
-    <div class="sectionheading">
-      <h5>FOR MORE INFORMATION</h5>
-      <h1>CONTACT US</h1>
-      <div class="vl"></div>
-    </div>
-
-    <div class="contactdetails">
-      <div class="address">
-        <div class="addresslayout">
-          <img src="images/whatsapp.png" alt="">
-          <p>Oyite Ojok lane, Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-        </div>
-        <div class="addresslayout">
-          <img src="images/whatsapp.png" alt="">
-
-          <p>+256787250196</p>
+            <div class="teamcontactdinfo">
+              <p class="title">Steve Ogweno3</p>
+              <p class="teamrole">Creative Director</p>
+              <div class="teamdes">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="addresslayout">
+        <div class="team__actions">
+          <button
+            class="pulsate-fwd"
+            id="teamactions--prev"
+            aria-label="previous slide"
+          >
+            prev
+          </button>
+          <button
+            class="pulsate-fwd"
+            id="teamactions--next"
+            aria-label="next slide"
+          >
+            next
+          </button>
+        </div>
+      </div>
+    </section>
 
-          <img src="images/whatsapp.png" alt="">
+    <section id="portfolio" class="featuredworks">
+      <div class="sectionheading">
+        <h5>IDEAS FACTORY</h5>
+        <h1>OFFICE GALLERY</h1>
+        <div class="vl"></div>
+      </div>
 
+      <div class="gallery">
+        <div class="galleryartwork galleryartwork--visible">
+          <img class="featuredimage" src="images/heroimage.JPG" alt="" />
+          <p class="title">Graphic Design Agency</p>
+          <p class="about-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+            eveniet rerum!
+          </p>
+        </div>
+
+        <div class="galleryartwork">
+          <img class="featuredimage" src="images/image2.jpg" alt="" />
+          <p class="title">Graphic Design Agency</p>
+          <p class="about-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+            eveniet rerum!
+          </p>
+        </div>
+        <div class="galleryartwork">
+          <img class="featuredimage" src="images/image3.JPG" alt="" />
+          <p class="title">Graphic Design Agency</p>
+          <p class="about-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+            eveniet rerum!
+          </p>
+        </div>
+
+        <div class="office__actions">
+          <button
+            class="pulsate-fwd"
+            id="officebtn--prev"
+            aria-label="previous slide"
+          >
+            prev
+          </button>
+          <button
+            class="pulsate-fwd"
+            id="officebtn--next"
+            aria-label="next slide"
+          >
+            next
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="featuredworks" id="clientsection">
+      <div class="sectionheading">
+        <h5>ENSURING SATISFACTION</h5>
+        <h1>OUR CLIENTS</h1>
+        <div class="vl"></div>
+      </div>
+
+      <div class="clientintrotext">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+          dolorum ullam eos praesentium animi dolor consequatur.
+        </p>
+      </div>
+
+      <div class="clientoveralcover">
+        <div class="clientcarousel">
+          <div class="clientslideitem clientslideitem--visible">
+            <img src="images/image3.JPG" alt="clientimage" />
+
+            <div class="clientcontent">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                doloribus odio tempora, aut inventore facere cumque et ab nihil.
+              </p>
+
+              <p class="title">Patrick OKELLO</p>
+              <p class="clientworktitle">Managing Director</p>
+            </div>
+          </div>
+          <div class="clientslideitem">
+            <img src="images/image2.JPG" alt="clientimage" />
+
+            <div class="clientcontent">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                doloribus odio tempora, aut inventore facere cumque et ab nihil.
+              </p>
+
+              <p class="title">Patrick OKELLO</p>
+              <p class="clientworktitle">Managing Director</p>
+            </div>
+          </div>
+
+          <div class="clientstory__action">
+            <button
+              class="pulsate-fwd"
+              id="clientbtn--prev"
+              aria-label="previous slide"
+            >
+              <
+            </button>
+            <button
+              class="pulsate-fwd"
+              id="clientbtn--next"
+              aria-label="next slide"
+            >
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="clientlogos">
+          <div class="firstclientlogo">
+            <div class="logocontainer logocontainer--visible">
+              <img src="images/twitter.png" alt="" />
+              <img src="images/facebookicon.png" alt="" />
+              <img src="images/whatsapp.png" alt="" />
+              <img src="images/instagram.png" alt="" />
+            </div>
+            <div class="logocontainer">
+              <img src="images/whatsapp.png" alt="" />
+              <img src="images/whatsapp.png" alt="" />
+              <img src="images/whatsapp.png" alt="" />
+              <img src="images/whatsapp.png" alt="" />
+            </div>
+
+            <div class="logocontainer">
+              <img src="images/twitter.png" alt="" />
+              <img src="images/twitter.png" alt="" />
+              <img src="images/twitter.png" alt="" />
+              <img src="images/twitter.png" alt="" />
+            </div>
+
+            <div class="clientactionbtn">
+              <button
+                class="pulsate-fwd"
+                id="clientactionbtn--prev"
+                aria-label="previous slide"
+              >
+                <
+              </button>
+              <button
+                class="pulsate-fwd"
+                id="clientactionbtn--next"
+                aria-label="next slide"
+              >
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="sectionheading">
+        <h5>SOME GREAT DESIGN IDEAS</h5>
+        <h1>OUR PORTFOLIO</h1>
+        <div class="vl"></div>
+      </div>
+      <div class="parent">
+        <div class="div1">
+          <button class="active">HISTORY</button>
+        </div>
+        <div class="div2">
+          <button>MISSION</button>
+        </div>
+        <div class="div3">
+          <button>VISION</button>
+        </div>
+        <div class="div4">
+          <button>CORE VALUES</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box">
+          <img src="https://source.unsplash.com/1000x800" />
+          <span>CSS</span>
+        </div>
+        <div class="box">
+          <img src="https://source.unsplash.com/1000x802" />
+          <span>Image</span>
+        </div>
+        <div class="box">
+          <img src="https://source.unsplash.com/1000x804" />
+          <span>Hover</span>
+        </div>
+        <div class="box">
+          <img src="https://source.unsplash.com/1000x806" />
+          <span>Effect</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactsection" class="featuredworks">
+      <div class="sectionheading">
+        <h5>FOR MORE INFORMATION</h5>
+        <h1>CONTACT US</h1>
+        <div class="vl"></div>
+      </div>
+
+      <div class="contactdetails">
+        <div class="address">
+          <div class="addresslayout">
+            <img src="images/whatsapp.png" alt="" />
+            <p>
+              Oyite Ojok lane, Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit.
+            </p>
+          </div>
+          <div class="addresslayout">
+            <img src="images/whatsapp.png" alt="" />
+
+            <p>+256787250196</p>
+          </div>
+
+          <div class="addresslayout">
+            <img src="images/whatsapp.png" alt="" />
+
+            <p>pkasemer@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contacthandlingform">
+          <form action="post.php" class="formclass">
+            <div class="contactform">
+              <label for="#username">Name</label>
+              <input id="username" type="text" placeholder="Enter Name" />
+            </div>
+
+            <div class="contactform">
+              <label for="#useremail">Email</label>
+              <input id="useremail" type="text" placeholder="Enter Email" />
+            </div>
+
+            <div class="contactform">
+              <label for="#usermessage">Message</label>
+              <textarea
+                id="usermessage"
+                type="text"
+                placeholder="Enter Your Message"
+              ></textarea>
+            </div>
+
+            <button class="submitbutton">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footercontainer">
+        <div class="footerdetails">
           <p>pkasemer@gmail.com</p>
+          <p>Ambrosoli Wonders</p>
         </div>
 
+        <div class="footersocials">
+          <img src="images/facebookwhite.png" alt="facebook" />
+          <img src="images/twitterwhite.png" alt="twitter" />
+          <img src="images/instagramwhite.png" alt="instagram" />
+          <img src="images/whatsappwhite.png" alt="whatsapp" />
+        </div>
       </div>
+    </footer>
 
-      <div class="contacthandlingform">
-        <form action="post.php" class="formclass">
-          <div class="contactform">
-            <label for="#username">Name</label>
-            <input id="username" type="text" placeholder="Enter Name">
-          </div>
-
-          <div class="contactform">
-            <label for="#useremail">Email</label>
-            <input id="useremail" type="text" placeholder="Enter Email">
-          </div>
-
-
-          <div class="contactform">
-            <label for="#usermessage">Message</label>
-            <textarea id="usermessage" type="text" placeholder="Enter Your Message"></textarea>
-          </div>
-
-          <button class="submitbutton">Submit</button>
-
-
-        </form>
-      </div>
-
-    </div>
-
-
-
-
-  </section>
-
-
-  <footer>
-
-    <div class="footercontainer">
-
-      <div class="footerdetails">
-        <p>pkasemer@gmail.com</p>
-        <p>Ambrosoli Wonders</p>
-      </div>
-
-      <div class="footersocials">
-        <img src="images/facebookwhite.png" alt="facebook">
-        <img src="images/twitterwhite.png" alt="twitter">
-        <img src="images/instagramwhite.png" alt="instagram">
-        <img src="images/whatsappwhite.png" alt="whatsapp">
-      </div>
-
-    </div>
-
-  </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="scripts/mainscript.js"></script>
-  <script src="scripts/courasel.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-  <script>
+    <script src="scripts/mainscript.js"></script>
+    <script src="scripts/courasel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script>
       // gsap.from('.explore',{opacity:0, duration: 1, y: -50, ease:'Power2.easeInOut'})
       //gsap.from('.anime',{opacity:0, duration: 1, y: -50, stagger:0.6})
 
@@ -835,9 +881,6 @@
       // });
 
       // tl.from("img", {x:200, opacity: 0, duration:1.5})
-
-  </script>
-
-</body>
-
+    </script>
+  </body>
 </html>

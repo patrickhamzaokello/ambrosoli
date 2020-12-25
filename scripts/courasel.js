@@ -204,4 +204,102 @@ function teamMovePrev() {
 
 // setInterval(featureMovenext, 5000);
 
-// end of featured slide
+// end of team slide
+
+// start of officegallery  slider
+
+let officecarousel = 0;
+const officeslides = document.getElementsByClassName("galleryartwork");
+const totalofficeslides = officeslides.length;
+
+document
+  .getElementById("officebtn--next")
+  .addEventListener("click", function () {
+    officeMovenext();
+  });
+
+document
+  .getElementById("officebtn--prev")
+  .addEventListener("click", function () {
+    officeMoveprev();
+  });
+
+function updateofficeSlidePosition() {
+  for (let slide of officeslides) {
+    slide.classList.remove("galleryartwork--visible");
+    slide.classList.add("galleryartwork--hidden");
+  }
+
+  officeslides[officecarousel].classList.add("galleryartwork--visible");
+}
+
+function officeMovenext() {
+  if (officecarousel == totalofficeslides - 1) {
+    officecarousel = 0;
+  } else {
+    officecarousel++;
+  }
+  updateofficeSlidePosition();
+}
+
+function officeMoveprev() {
+  if (officecarousel == 0) {
+    officecarousel = totalofficeslides - 1;
+  } else {
+    officecarousel--;
+  }
+  updateofficeSlidePosition();
+}
+
+// setInterval(featureMovenext, 5000);
+
+// end of officegallery slide
+
+// start of clientlogo slider
+
+let clientslideposition = 0;
+const logoslides = document.getElementsByClassName("logocontainer");
+const totallogoslides = logoslides.length;
+
+document
+  .getElementById("clientactionbtn--next")
+  .addEventListener("click", function () {
+    moveClientLogonext();
+  });
+
+document
+  .getElementById("clientactionbtn--prev")
+  .addEventListener("click", function () {
+    moveClientLogoprev();
+  });
+
+function updateClientSlideposition() {
+  for (let slide of logoslides) {
+    slide.classList.remove("logocontainer--visible");
+    slide.classList.add("logocontainer--hidden");
+  }
+
+  logoslides[clientslideposition].classList.add("logocontainer--visible");
+}
+
+function moveClientLogonext() {
+  if (clientslideposition == totallogoslides - 1) {
+    clientslideposition = 0;
+  } else {
+    clientslideposition++;
+  }
+  updateClientSlideposition();
+}
+
+function moveClientLogoprev() {
+  if (clientslideposition == 0) {
+    clientslideposition = totallogoslides - 1;
+  } else {
+    clientslideposition--;
+  }
+  updateClientSlideposition();
+}
+
+// setInterval(moveToNextSlide, 20000);
+
+// end of clientlogo slide

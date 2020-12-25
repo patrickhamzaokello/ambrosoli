@@ -390,6 +390,138 @@ header nav a:hover {
   color: black;
 }
 
+#portfolio {
+  background: #272727;
+}
+
+#portfolio .sectionheading h1 {
+  color: white;
+}
+
+#portfolio .sectionheading h5 {
+  color: gray;
+}
+
+#portfolio .gallery p {
+  color: lightgray;
+}
+
+.clientintrotext {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.clientoveralcover .clientcarousel {
+  position: relative;
+}
+
+.clientoveralcover .clientcarousel .clientslideitem,
+.clientoveralcover .clientcarousel .clientslideitem--hidden {
+  display: none;
+}
+
+.clientoveralcover .clientcarousel .clientslideitem--visible {
+  display: block;
+}
+
+.clientoveralcover .clientcarousel .clientcontent {
+  text-align: center;
+}
+
+.clientoveralcover .clientcarousel .clientstory__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 25%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.clientoveralcover .clientcarousel .clientstory__action button {
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.clientoveralcover .clientcarousel .clientstory__action #clientbtn--prev {
+  margin-left: 20px;
+  background: #25a9e0;
+  color: black;
+}
+
+.clientoveralcover .clientcarousel .clientstory__action #clientbtn--next {
+  margin-right: 20px;
+  background: #25a9e0;
+  color: black;
+}
+
+.clientoveralcover .clientlogos .firstclientlogo {
+  border: 1px solid gray;
+  position: relative;
+}
+
+.clientoveralcover .clientlogos .firstclientlogo .logocontainer,
+.clientoveralcover .clientlogos .firstclientlogo .logocontainer--hidden {
+  display: none;
+  padding: 1em;
+}
+
+.clientoveralcover .clientlogos .firstclientlogo .logocontainer img {
+  border: 1px solid gray;
+  padding: 1em;
+}
+
+.clientoveralcover .clientlogos .firstclientlogo .logocontainer--visible {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  grid-gap: 1em;
+}
+
+.clientoveralcover .clientlogos .clientactionbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.clientoveralcover .clientlogos .clientactionbtn button {
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.clientoveralcover .clientlogos .clientactionbtn #clientactionbtn--prev {
+  margin-left: 20px;
+  background: #3333;
+  color: black;
+}
+
+.clientoveralcover .clientlogos .clientactionbtn #clientactionbtn--next {
+  margin-right: 20px;
+  background: #3333;
+  color: black;
+}
+
 .featuredworkcarousel {
   overflow: hidden;
   position: relative;
@@ -432,13 +564,13 @@ header nav a:hover {
 
 .featuredworkcarousel .carousel__actions #featured__button--prev {
   margin-left: 20px;
-  background: #00ff80;
+  background: #25a9e0;
   color: black;
 }
 
 .featuredworkcarousel .carousel__actions #featured__button--next {
   margin-right: 20px;
-  background: #00ff80;
+  background: #25a9e0;
   color: black;
 }
 
@@ -1040,109 +1172,6 @@ button {
   border-top: 1px solid #9e9dcc;
 }
 
-.card {
-  position: relative;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-/*Light blue cover above the slide show*/
-.card::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 900;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(22, 59, 140, 0.2);
-}
-
-.card_part {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translateX(700px);
-          transform: translateX(700px);
-  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/1.jpg?raw=true);
-  background-repeat: no-repeat;
-  -webkit-animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
-          animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
-}
-
-.card_part.card_part-two {
-  z-index: 6;
-  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/2.jpg?raw=true);
-  background-repeat: no-repeat;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-}
-
-.card_part.card_part-three {
-  z-index: 5;
-  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/3.jpg?raw=true);
-  background-repeat: no-repeat;
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-}
-
-.card_part.card_part-four {
-  z-index: 4;
-  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
-  background-repeat: no-repeat;
-  -webkit-animation-delay: 21s;
-          animation-delay: 21s;
-}
-
-@-webkit-keyframes opaqTransition {
-  3% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  25% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  28% {
-    -webkit-transform: translateX(-700px);
-            transform: translateX(-700px);
-  }
-  100% {
-    -webkit-transform: translateX(-700px);
-            transform: translateX(-700px);
-  }
-}
-
-@keyframes opaqTransition {
-  3% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  25% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  28% {
-    -webkit-transform: translateX(-700px);
-            transform: translateX(-700px);
-  }
-  100% {
-    -webkit-transform: translateX(-700px);
-            transform: translateX(-700px);
-  }
-}
-
 .address {
   text-align: center;
   padding: 4em;
@@ -1213,7 +1242,7 @@ footer .footercontainer .footersocials img:hover {
 
 @media only screen and (min-width: 800px) {
   section {
-    padding: 10em 6em 4em 6em;
+    padding: 6em 6em 4em 6em;
   }
   #menu-bar {
     display: none;
@@ -1259,6 +1288,13 @@ footer .footercontainer .footersocials img:hover {
   }
   .aboutus-container ul li p {
     font-size: 13px;
+  }
+  .clientoveralcover {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    grid-gap: 2em;
   }
 }
 
@@ -1336,12 +1372,50 @@ footer .footercontainer .footersocials img:hover {
   .gallery {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[4];
-        grid-template-columns: repeat(4, auto);
-    grid-gap: 2em;
+    place-content: center;
+    position: relative;
   }
-  .gallery .galleryartwork {
+  .gallery .galleryartwork,
+  .gallery .galleryartwork--hidden {
     text-align: center;
+    display: none;
+  }
+  .gallery .galleryartwork--visible {
+    display: -ms-grid;
+    display: grid;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .gallery .office__actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .gallery .office__actions button {
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+  .gallery .office__actions #officebtn--prev {
+    margin-left: 20px;
+    background: #25a9e0;
+    color: black;
+  }
+  .gallery .office__actions #officebtn--next {
+    margin-right: 20px;
+    background: #25a9e0;
+    color: black;
   }
   .teamcollectiondiv {
     display: -ms-grid;
