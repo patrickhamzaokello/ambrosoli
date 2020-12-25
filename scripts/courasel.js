@@ -351,6 +351,6 @@ function moveTestimonialsprev() {
   updateTestimonials();
 }
 
-// setInterval(moveToNextSlide, 20000);
+setInterval(moveTestimonialsnext, 5000);
 
 // end of clienttestimonials slide

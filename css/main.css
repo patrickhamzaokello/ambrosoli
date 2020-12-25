@@ -840,6 +840,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: sans-serif;
+}
+
+.addresslayout p {
+  font-weight: 100;
+  color: #333333;
 }
 
 .addresslayout img {
@@ -1190,6 +1196,7 @@ button {
 
 .address {
   text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
   padding: 4em;
 }
 
@@ -1456,9 +1463,6 @@ footer .footercontainer .footersocials img:hover {
   }
   .contactdetails .address {
     text-align: unset;
-  }
-  .contactdetails .address p {
-    font-size: 20px;
   }
 }
 

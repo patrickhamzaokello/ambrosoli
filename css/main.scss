@@ -787,6 +787,12 @@ img {
   display: flex;
   margin-top: 1em;
   align-items: center;
+  font-family: sans-serif;
+
+  p {
+    font-weight: 100;
+    color: #333333;
+  }
 
   img {
     margin-right: 2em;
@@ -1064,6 +1070,7 @@ button {
 
 .address {
   text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
   padding: 4em;
 }
 
@@ -1344,10 +1351,6 @@ footer {
 
     .address {
       text-align: unset;
-
-      p {
-        font-size: 20px;
-      }
     }
   }
 }
