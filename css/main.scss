@@ -462,10 +462,10 @@ header {
 
 .gallery {
   position: relative;
+  padding-top: 4em;
   .galleryartwork,
   .galleryartwork--hidden {
     text-align: center;
-    padding-bottom: 2em;
     display: none;
   }
 
@@ -483,9 +483,9 @@ header {
   .office__actions {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     position: absolute;
-    bottom: 0;
+    place-content: center;
+    top: 0;
 
     button {
       border-radius: 50px;
@@ -494,6 +494,7 @@ header {
       cursor: pointer;
       width: 40px;
       height: 40px;
+      margin: 2em;
     }
 
     #officebtn--prev {
@@ -531,15 +532,17 @@ header {
 
 .clientintrotext {
   text-align: center;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
 
 .clientoveralcover {
   .clientcarousel {
     position: relative;
+    padding-top: 4em;
     .clientslideitem,
     .clientslideitem--hidden {
       display: none;
+      padding-top: 2em;
     }
 
     .clientslideitem--visible {
@@ -554,9 +557,9 @@ header {
     .clientstory__action {
       display: flex;
       width: 100%;
-      justify-content: space-between;
       position: absolute;
-      bottom: 0;
+      place-content: center;
+      top: 0;
 
       button {
         border-radius: 50px;
@@ -565,6 +568,7 @@ header {
         cursor: pointer;
         width: 40px;
         height: 40px;
+        margin: 2em;
       }
 
       #clientbtn--prev {
@@ -597,7 +601,7 @@ header {
   }
 
   .clientlogos {
-    margin-top: 4em;
+    padding-top: 93.7px;
     .firstclientlogo {
       border: 1px solid gray;
       position: relative;
@@ -632,6 +636,7 @@ header {
         cursor: pointer;
         width: 40px;
         height: 40px;
+        margin: 2em;
       }
 
       #clientactionbtn--prev {
@@ -690,6 +695,61 @@ header {
     }
 
     #featured__button--next {
+      margin-right: 20px;
+      background: #25a9e0;
+      color: white;
+    }
+  }
+}
+
+.portfoliocollectioncarousel {
+  overflow: hidden;
+  position: relative;
+  padding-top: 4em; //for mobile only
+
+  .portfoliocollection,
+  .portfoliocollection--hidden {
+    display: none;
+    padding-top: 2em;
+  }
+
+  .portfoliocollection {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 1.5em;
+  }
+
+  .portfoliocollection--visible {
+    display: grid;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .portfoliocollectionbtn {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    place-content: center;
+    top: 0;
+
+    button {
+      border-radius: 50px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      margin: 2em;
+    }
+
+    #portfoliobtn--prev {
+      margin-left: 20px;
+      background: #25a9e0;
+      color: white;
+    }
+
+    #portfoliobtn--next {
       margin-right: 20px;
       background: #25a9e0;
       color: white;
@@ -773,6 +833,15 @@ header {
   100% {
     opacity: 1;
     transform: opacity linear;
+  }
+}
+
+.companyportfolio {
+  .parent {
+    button {
+      padding: 1em;
+      width: 100%;
+    }
   }
 }
 
@@ -874,24 +943,6 @@ img {
 
 .active {
   background-color: #717171;
-}
-
-.addresslayout {
-  display: flex;
-  margin-top: 1em;
-  align-items: center;
-  font-family: sans-serif;
-
-  p {
-    font-weight: 100;
-    color: #333333;
-  }
-
-  img {
-    margin-right: 2em;
-    width: 30px;
-    height: 30px;
-  }
 }
 
 /* Fading animation */
@@ -1089,45 +1140,6 @@ button {
   }
 }
 
-.container {
-  display: flex;
-  width: 100%;
-  padding: 4% 2%;
-  box-sizing: border-box;
-}
-
-.box {
-  flex: 1;
-  overflow: hidden;
-  transition: 0.5s;
-  margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-  line-height: 0;
-}
-
-.box > img {
-  width: 200%;
-  height: calc(100% - 10vh);
-  object-fit: cover;
-  transition: 0.5s;
-}
-
-.box > span {
-  font-size: 3.8vh;
-  display: block;
-  text-align: center;
-  height: 10vh;
-  line-height: 2.6;
-}
-
-.box:hover {
-  flex: 1 1 50%;
-}
-.box:hover > img {
-  width: 100%;
-  height: 100%;
-}
-
 .teamcard {
   padding: 2em 0;
 }
@@ -1164,12 +1176,27 @@ button {
 .address {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  padding: 4em;
+}
+
+.addresslayout {
+  display: block;
+  align-items: center;
+  font-family: sans-serif;
+
+  p {
+    font-weight: 100;
+    color: #636363;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 form {
   .contactform {
-    margin-bottom: 2em;
+    margin: 2em 0;
     label {
       display: block;
       color: #636363;
@@ -1192,6 +1219,8 @@ form {
 
   .submitbutton {
     background: #1b75bb;
+    padding: 1em;
+    width: 100%;
   }
 }
 
@@ -1331,6 +1360,18 @@ footer {
       }
     }
   }
+
+  .contactdetails {
+    .address {
+      .addresslayout {
+        display: flex;
+      }
+    }
+    .submitbutton {
+      background: #1b75bb;
+      padding: 1em 2em;
+    }
+  }
 }
 
 @media only screen and (min-width: 1250px) {
@@ -1397,6 +1438,12 @@ footer {
     .workcard {
       text-align: center;
     }
+  }
+
+  .portfoliocollection {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 0.5em;
   }
 
   .skillsrating {
@@ -1469,12 +1516,19 @@ footer {
 
   .contactdetails {
     display: grid;
-    grid-template-columns: (40% auto);
+    grid-template-columns: (60% auto);
     grid-gap: 2em;
     padding-top: 4em;
 
     .address {
       text-align: unset;
+      padding: 9em;
+
+      .addresslayout {
+        img {
+          margin-right: 2em;
+        }
+      }
     }
   }
 }
