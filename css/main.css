@@ -1231,9 +1231,10 @@ footer .footercontainer {
 }
 
 footer .footercontainer .footerdetails {
-  padding: 2em;
+  padding: 0.5em;
   text-align: center;
-  color: #25a9e0;
+  color: lightgray;
+  border-top: 1px solid #383dce;
 }
 
 footer .footercontainer .footersocials {
@@ -1245,15 +1246,15 @@ footer .footercontainer .footersocials {
 }
 
 footer .footercontainer .footersocials img {
-  width: 50px;
-  height: 50px;
-  background: #25a9e0;
-  margin-right: 2em;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #383dce;
+  margin: 1em;
   padding: 1em;
 }
 
 footer .footercontainer .footersocials img:hover {
-  background: blue;
+  background: #383dce;
 }
 
 @media only screen and (min-width: 800px) {
