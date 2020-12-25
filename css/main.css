@@ -463,6 +463,22 @@ header nav a:hover {
   color: black;
 }
 
+.clientoveralcover .clientcarousel .slidecounter {
+  position: absolute;
+  top: 0;
+  margin: 1em;
+}
+
+.clientoveralcover .clientcarousel .slidecounter #counter {
+  background: honeydew;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  color: #2e3191;
+}
+
 .clientoveralcover .clientlogos .firstclientlogo {
   border: 1px solid gray;
   position: relative;
@@ -1295,6 +1311,11 @@ footer .footercontainer .footersocials img:hover {
     -ms-grid-columns: (auto)[2];
         grid-template-columns: repeat(2, auto);
     grid-gap: 2em;
+  }
+  .clientoveralcover .clientcarousel .clientslideitem img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 

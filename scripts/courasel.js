@@ -329,6 +329,8 @@ function updateTestimonials() {
   }
 
   testimonies[testimonialposition].classList.add("clientslideitem--visible");
+  document.getElementById("counter").innerHTML = testimonialposition + 1;
+  document.getElementById("totalslides").innerHTML = totaltestimonies;
 }
 
 function moveTestimonialsnext() {

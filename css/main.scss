@@ -450,6 +450,21 @@ header {
         color: black;
       }
     }
+
+    .slidecounter {
+      position: absolute;
+      top: 0;
+      margin: 1em;
+      #counter {
+        background: honeydew;
+        font-weight: bold;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        text-align: center;
+        color: #2e3191;
+      }
+    }
   }
 
   .clientlogos {
@@ -1174,6 +1189,15 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-gap: 2em;
+
+    .clientcarousel {
+      .clientslideitem {
+        img {
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+    }
   }
 }
 
