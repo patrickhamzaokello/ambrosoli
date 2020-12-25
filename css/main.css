@@ -1589,7 +1589,6 @@ footer .footercontainer .footersocials img:hover {
     -ms-grid-columns: 60% auto;
         grid-template-columns: 60% auto;
     grid-gap: 2em;
-    padding-top: 4em;
   }
   .contactdetails .address {
     text-align: unset;
