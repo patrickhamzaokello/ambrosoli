@@ -237,8 +237,13 @@ img {
   width: 100%;
 }
 
+.navbar-fixed-top.scrolled {
+  background-color: #2e3191 !important;
+  transition: background-color 200ms linear;
+}
+
 .nav-container {
-  background: #2e3191;
+  background: #000;
 
   a {
     color: white;
@@ -1099,6 +1104,28 @@ form {
 
   .submitbutton {
     background: #1b75bb;
+  }
+}
+
+.whatwedo {
+  background: #172b4e;
+
+  .sectionheading {
+    h1,
+    h5 {
+      color: lightgray;
+    }
+  }
+
+  .about-desc {
+    color: lightgray;
+  }
+  .about-title {
+    color: white;
+  }
+
+  .texttitle {
+    border: none;
   }
 }
 

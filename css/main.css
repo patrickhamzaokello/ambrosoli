@@ -226,8 +226,14 @@ img {
   width: 100%;
 }
 
+.navbar-fixed-top.scrolled {
+  background-color: #2e3191 !important;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
 .nav-container {
-  background: #2e3191;
+  background: #000;
 }
 
 .nav-container a {
@@ -1225,6 +1231,27 @@ form .contactform textarea {
 
 form .submitbutton {
   background: #1b75bb;
+}
+
+.whatwedo {
+  background: #172b4e;
+}
+
+.whatwedo .sectionheading h1,
+.whatwedo .sectionheading h5 {
+  color: lightgray;
+}
+
+.whatwedo .about-desc {
+  color: lightgray;
+}
+
+.whatwedo .about-title {
+  color: white;
+}
+
+.whatwedo .texttitle {
+  border: none;
 }
 
 footer {
