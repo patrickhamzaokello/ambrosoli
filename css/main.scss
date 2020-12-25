@@ -354,11 +354,12 @@ header {
   padding: 2em 4em;
   right: 0;
   top: 0;
+  z-index: 3;
 }
 
 #menu-bar {
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 
 #nav {
@@ -400,6 +401,15 @@ header {
 
 .change #bar2 {
   opacity: 0;
+}
+
+.missionactionbutton {
+  .parent {
+    button {
+      width: 100%;
+      padding: 1em;
+    }
+  }
 }
 
 .teamcarousel {
@@ -590,6 +600,7 @@ header {
 .featuredworkcarousel {
   overflow: hidden;
   position: relative;
+  padding-top: 4em; //for mobile only
 
   .workcollection,
   .workcollection--hidden {
@@ -603,13 +614,12 @@ header {
     animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
-  .carousel__actions {
+  .featuredactionbtns {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    place-content: center;
+    top: 0;
 
     button {
       border-radius: 50px;
@@ -618,18 +628,19 @@ header {
       cursor: pointer;
       width: 40px;
       height: 40px;
+      margin: 2em;
     }
 
     #featured__button--prev {
       margin-left: 20px;
       background: #25a9e0;
-      color: black;
+      color: white;
     }
 
     #featured__button--next {
       margin-right: 20px;
       background: #25a9e0;
-      color: black;
+      color: white;
     }
   }
 }

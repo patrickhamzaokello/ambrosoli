@@ -133,6 +133,8 @@ function updateFeatureSlidePosition() {
   }
 
   featureslides[slideFeatureposition].classList.add("workcollection--visible");
+  document.getElementById("featurecounter").innerHTML =
+    slideFeatureposition + 1;
 }
 
 function featureMovenext() {

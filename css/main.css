@@ -354,11 +354,12 @@ header nav a:hover {
   padding: 2em 4em;
   right: 0;
   top: 0;
+  z-index: 3;
 }
 
 #menu-bar {
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 
 #nav {
@@ -407,6 +408,11 @@ header nav a:hover {
 
 .change #bar2 {
   opacity: 0;
+}
+
+.missionactionbutton .parent button {
+  width: 100%;
+  padding: 1em;
 }
 
 .teamcarousel {
@@ -612,6 +618,7 @@ header nav a:hover {
 .featuredworkcarousel {
   overflow: hidden;
   position: relative;
+  padding-top: 4em;
 }
 
 .featuredworkcarousel .workcollection,
@@ -626,39 +633,36 @@ header nav a:hover {
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.featuredworkcarousel .carousel__actions {
+.featuredworkcarousel .featuredactionbtns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  place-content: center;
+  top: 0;
 }
 
-.featuredworkcarousel .carousel__actions button {
+.featuredworkcarousel .featuredactionbtns button {
   border-radius: 50px;
   border: none;
   font-weight: bold;
   cursor: pointer;
   width: 40px;
   height: 40px;
+  margin: 2em;
 }
 
-.featuredworkcarousel .carousel__actions #featured__button--prev {
+.featuredworkcarousel .featuredactionbtns #featured__button--prev {
   margin-left: 20px;
   background: #25a9e0;
-  color: black;
+  color: white;
 }
 
-.featuredworkcarousel .carousel__actions #featured__button--next {
+.featuredworkcarousel .featuredactionbtns #featured__button--next {
   margin-right: 20px;
   background: #25a9e0;
-  color: black;
+  color: white;
 }
 
 .carousel {
