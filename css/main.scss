@@ -1369,7 +1369,7 @@ footer {
   }
   .parent {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     place-content: center;
 
     button {
@@ -1386,6 +1386,9 @@ footer {
       grid-area: unset;
     }
     .div4 {
+      grid-area: unset;
+    }
+    .div5 {
       grid-area: unset;
     }
   }

@@ -1462,8 +1462,8 @@ footer .footercontainer .footersocials img:hover {
   .parent {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[4];
-        grid-template-columns: repeat(4, auto);
+    -ms-grid-columns: (auto)[5];
+        grid-template-columns: repeat(5, auto);
     place-content: center;
   }
   .parent button {
@@ -1479,6 +1479,9 @@ footer .footercontainer .footersocials img:hover {
     grid-area: unset;
   }
   .parent .div4 {
+    grid-area: unset;
+  }
+  .parent .div5 {
     grid-area: unset;
   }
   .carousel .explore {
