@@ -312,6 +312,10 @@ img {
   color: black;
 }
 
+.navbar-fixed-top.scrolled a {
+  color: white !important;
+}
+
 #header {
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
