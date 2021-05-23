@@ -747,6 +747,8 @@ header nav a:hover {
 }
 
 .carousel {
+  margin-top: -95px;
+  z-index: -1;
   overflow: hidden;
   max-width: 2000px;
   position: relative;
