@@ -305,11 +305,11 @@ img {
 }
 
 .nav-container {
-  background: #000;
+  background: #0000;
 }
 
 .nav-container a {
-  color: white;
+  color: black;
 }
 
 #header {
