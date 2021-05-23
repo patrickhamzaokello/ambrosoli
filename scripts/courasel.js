@@ -6,7 +6,7 @@ const histbtn = document.getElementById("History--btn");
 const missionbtn = document.getElementById("Mission--btn");
 const visionbtn = document.getElementById("Vision--btn");
 const corebtn = document.getElementById("Core--btn");
-const newbtn = document.getElementById("New--btn");
+// const newbtn = document.getElementById("New--btn");
 
 const totalprofilestats = companyprofile.length;
 
@@ -54,16 +54,16 @@ corebtn.addEventListener("click", function () {
   corebtn.classList.add("active");
 });
 
-newbtn.addEventListener("click", function () {
-  console.log("new btn");
-  const i = 4;
-  changeprofilediv(i);
-  histbtn.classList.remove("active");
-  missionbtn.classList.remove("active");
-  visionbtn.classList.remove("active");
-  corebtn.classList.remove("active");
-  newbtn.classList.add("active");
-});
+// newbtn.addEventListener("click", function () {
+//   console.log("new btn");
+//   const i = 4;
+//   changeprofilediv(i);
+//   histbtn.classList.remove("active");
+//   missionbtn.classList.remove("active");
+//   visionbtn.classList.remove("active");
+//   corebtn.classList.remove("active");
+//   newbtn.classList.add("active");
+// });
 
 function changeprofilediv(i) {
   for (let slide of companyprofile) {
