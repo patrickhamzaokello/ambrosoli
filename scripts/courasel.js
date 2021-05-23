@@ -18,7 +18,7 @@ histbtn.addEventListener("click", function () {
   missionbtn.classList.remove("active");
   visionbtn.classList.remove("active");
   corebtn.classList.remove("active");
-  newbtn.classList.remove("active");
+//   newbtn.classList.remove("active");
 });
 
 missionbtn.addEventListener("click", function () {
@@ -29,7 +29,7 @@ missionbtn.addEventListener("click", function () {
   missionbtn.classList.add("active");
   visionbtn.classList.remove("active");
   corebtn.classList.remove("active");
-  newbtn.classList.remove("active");
+//   newbtn.classList.remove("active");
 });
 
 visionbtn.addEventListener("click", function () {
@@ -40,7 +40,7 @@ visionbtn.addEventListener("click", function () {
   missionbtn.classList.remove("active");
   visionbtn.classList.add("active");
   corebtn.classList.remove("active");
-  newbtn.classList.remove("active");
+//   newbtn.classList.remove("active");
 });
 
 corebtn.addEventListener("click", function () {
@@ -50,7 +50,7 @@ corebtn.addEventListener("click", function () {
   histbtn.classList.remove("active");
   missionbtn.classList.remove("active");
   visionbtn.classList.remove("active");
-  newbtn.classList.remove("active");
+//   newbtn.classList.remove("active");
   corebtn.classList.add("active");
 });
 
